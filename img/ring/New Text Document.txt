@@ -1,0 +1,3 @@
+Ring = Font (adelia , color = #cb9c60 )
+
+Other = Font (Tenor Sans, color = #414042, ) Categories = font (adelia , color = #cb9c60)

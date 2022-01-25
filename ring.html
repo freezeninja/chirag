@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirag - Ring</title>
+
+    <!-- fontawsome  -->
+    <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- owlcursol  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wholeHeader headerNotHomeWhole" id="wholeHeader">
+        <div class="upperHeader">
+            <div class="upperHdCont">
+                <div class="hambBar">
+                    <span class="NavIcon" id="NavIcon"><i class="fas fa-bars"></i></span>
+                </div>
+                <div class="chiragLogo">
+                    <div class="headerLogo">
+                        <a href="./index.html">
+                            <img src="img/logo-2.png" id="headerImgJs" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="headerIcon">
+                    <div class="perIcon loginIconHd">
+                        <img src="img/profile.png" class="perHdImg" id="loginJs">
+                        <div class="logSign">
+                            <ul>
+                                <li>Sign up</li>
+                                <li class="mt-1">Sign in</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="perIcon">
+                        <img src="img/fav.png" class="perHdImg">
+                    </div>
+                    <div class="perIcon">
+                        <img src="img/cart.png" class="perHdImg">
+                    </div>
+                    <div class="perIcon">
+                        <img src="img/search.png" class="perHdImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downHeader" id="downHeader">
+            <div class="doenHdCont notHomeDoen">
+                <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Earrings</a></li>
+                            <li><a class="dropdown-item" href="./ring.html">Ring</a></li>
+                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                            <li><a class="dropdown-item" href="#">Necklace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">New arrival</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Collection
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Rani Sa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gift a diamond</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="ring-upper-txt text-center mt-5">
+        <p class="sliderAlFnt">Ring</p>
+        <div class="container">
+            <p class="fadeTxtColorAll pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a
+                suscipit aperiam vel esse facilis ullam consectetur! Distinctio, unde nesciunt? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Vitae praesentium nam nobis?</p>
+        </div>
+    </div>
+
+    <div class="ring-banner">
+        <img src="img/ring/slide.png" class="img-fluid">
+    </div>
+
+
+    <div class="sortingAll mt-5">
+        <div class="container">
+            <div class="sorting-content">
+                <div class="right-Sorting">
+                    <div class="perSortingBox">
+                        <span class="slectSrtDown"><i class="fas fa-sort-down"></i></span>
+                        <select name="material" id="material" style="min-width: 83px;">
+                            <option value="Material" selected>Material</option>
+                            <option value="M1">M1</option>
+                        </select>
+                    </div>
+                    <div class="perSortingBox">
+                        <span class="slectSrtDown"><i class="fas fa-sort-down"></i></span>
+                        <select name="size" id="size" style="min-width: 50px;">
+                            <option value="size" selected>Size</option>
+                            <option value="M1">M1</option>
+                        </select>
+                    </div>
+                    <div class="perSortingBox">
+                        <span class="slectSrtDown"><i class="fas fa-sort-down"></i></span>
+                        <select name="cut" id="cut" style="min-width: 45px;">
+                            <option value="cut" selected>Cut</option>
+                            <option value="M1">M1</option>
+                        </select>
+                    </div>
+                    <div class="perSortingBox">
+                        <span class="slectSrtDown"><i class="fas fa-sort-down"></i></span>
+                        <select name="price" id="price" style="min-width: 55px;">
+                            <option value="price" selected>Price</option>
+                            <option value="M1">M1</option>
+                        </select>
+                    </div>
+                    <div class="perSortingBox">
+                        <span class="slectSrtDown"><i class="fas fa-sort-down"></i></span>
+                        <select name="gender" id="gender" style="min-width: 70px;">
+                            <option value="gender" selected>Gender</option>
+                            <option value="M1">M1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="left-Sorting">
+                    <div class="perSortingBox">
+                        <span class="slectSrtDown"><i class="fas fa-sort-down"></i></span>
+                        <select name="sortby" id="sortby" style="min-width: 70px;">
+                            <option value="sortby" selected>Sort by</option>
+                            <option value="M1">M1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="ring-product mt-3 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-1.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-2.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-3.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 perProduct-Ring">
+                                    <div class="ring-per-imags">
+                                        <img src="img/ring/product-4.png" class="img-fluid">
+                                    </div>
+                                    <div class="ring-down-txt mt-2">
+                                        <div class="ringTxt">
+                                            <p class="ringLrg-txt p-0 m-0">
+                                                ARPEGGIA 18AB56O
+                                            </p>
+                                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                                        </div>
+                                        <div class="ringWCIcon">
+                                            <span class="ringWish"><img src="img/fav.png"></span>
+                                            <span class="ringCart"><img src="img/cart.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 perProduct-Ring">
+                                    <div class="ring-per-imags">
+                                        <img src="img/ring/product-5.png" class="img-fluid">
+                                    </div>
+                                    <div class="ring-down-txt mt-2">
+                                        <div class="ringTxt">
+                                            <p class="ringLrg-txt p-0 m-0">
+                                                ARPEGGIA 18AB56O
+                                            </p>
+                                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                                        </div>
+                                        <div class="ringWCIcon">
+                                            <span class="ringWish"><img src="img/fav.png"></span>
+                                            <span class="ringCart"><img src="img/cart.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 perProduct-Ring">
+                            <div class="long-img-box">
+                                <img src="img/ring/product-9.png" class="img-fluid">
+                            </div>
+                            <div class="ring-down-txt mt-2">
+                                <div class="ringTxt">
+                                    <p class="ringLrg-txt p-0 m-0">
+                                        ARPEGGIA 18AB56O
+                                    </p>
+                                    <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                                </div>
+                                <div class="ringWCIcon">
+                                    <span class="ringWish"><img src="img/fav.png"></span>
+                                    <span class="ringCart"><img src="img/cart.png"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-6.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-7.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-8.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="long-img-box">
+                                <img src="img/ring/product-10.png" class="img-fluid">
+                            </div>
+                            <div class="ring-down-txt mt-2">
+                                <div class="ringTxt">
+                                    <p class="ringLrg-txt p-0 m-0">
+                                        ARPEGGIA 18AB56O
+                                    </p>
+                                    <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                                </div>
+                                <div class="ringWCIcon">
+                                    <span class="ringWish"><img src="img/fav.png"></span>
+                                    <span class="ringCart"><img src="img/cart.png"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 perProduct-Ring">
+                                    <div class="ring-per-imags">
+                                        <img src="img/ring/product-4.png" class="img-fluid">
+                                    </div>
+                                    <div class="ring-down-txt mt-2">
+                                        <div class="ringTxt">
+                                            <p class="ringLrg-txt p-0 m-0">
+                                                ARPEGGIA 18AB56O
+                                            </p>
+                                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                                        </div>
+                                        <div class="ringWCIcon">
+                                            <span class="ringWish"><img src="img/fav.png"></span>
+                                            <span class="ringCart"><img src="img/cart.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 perProduct-Ring">
+                                    <div class="ring-per-imags">
+                                        <img src="img/ring/product-5.png" class="img-fluid">
+                                    </div>
+                                    <div class="ring-down-txt mt-2">
+                                        <div class="ringTxt">
+                                            <p class="ringLrg-txt p-0 m-0">
+                                                ARPEGGIA 18AB56O
+                                            </p>
+                                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                                        </div>
+                                        <div class="ringWCIcon">
+                                            <span class="ringWish"><img src="img/fav.png"></span>
+                                            <span class="ringCart"><img src="img/cart.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-1.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-2.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 perProduct-Ring">
+                    <div class="ring-per-imags">
+                        <img src="img/ring/product-3.png" class="img-fluid">
+                    </div>
+                    <div class="ring-down-txt mt-2">
+                        <div class="ringTxt">
+                            <p class="ringLrg-txt p-0 m-0">
+                                ARPEGGIA 18AB56O
+                            </p>
+                            <p class="ringSmml-txt p-0 m-0">Rs. 1,00,000</p>
+                        </div>
+                        <div class="ringWCIcon">
+                            <span class="ringWish"><img src="img/fav.png"></span>
+                            <span class="ringCart"><img src="img/cart.png"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-4 mb-5">
+        <div class="all-Img-Btn text-center">
+            <div class="allLeftImg1"><img src="img/ring/line.png" class="img-fluid"></div>
+            <div class="allimgBtnbox">
+                <button class="btns">Discover more</button>
+            </div>
+            <div class="allrightImg1"><img src="img/ring/line-2.png" class="img-fluid"></div>
+        </div>
+    </div>
+
+    <section class="producySlider mt-5 mb-5">
+        <div class="sliderHead text-center mb-5 mt-5">
+            <h2 class="allHeading">
+                Other 
+                <span class="sliderAlFnt">Categories</span>
+            </h2>
+        </div>
+        <div class="container">
+            <div class="sliderContent">
+                <div class="owl-carousel owl-theme s-content">
+                    <div class="item">
+                        <a href="#">
+                            <div class="prodImg">
+                                <img src="img/nacklace.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="prodImg">
+                                <img src="img/earrings.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="prodImg">
+                                <img src="img/Bracelet.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-btns-prev-slider sliderLRArr"><img src="img/left-arrow.png" alt=""></div>
+        <div class="custom-btns-next-slider sliderLRArr"><img src="img/right-arrow.png" alt=""></div>
+    </section>
+
+    <div class="footer">
+        <div class="footerCont pt-5 pb-5 container">
+            <div class="footerHeading">
+                <p class="footerText">
+                    Explore Chirag
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="footerLinks">
+                        <a href="#">Our story</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#">Journey of a Diamond</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#">Contact us</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#">Request for a call back</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#">Download brochure</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#"></a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#"></a>
+                    </div>
+                    <div class="fbInstFtr mt-5 mb-3">
+                        <span class="perFTrSclImg">
+                            <a href="#">
+                                <img src="img/facebook.png">
+                            </a>
+                        </span>
+                        <span class="perFTrSclImg">
+                            <a href="#">
+                                <img src="img/instagram.png">
+                            </a>
+                        </span>
+                        <span class="perFTrSclImg">
+                            <a href="#">
+                                <img src="img/twiter.png">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="NewLetrSub">
+                        <div class="newLtrText cust-medium-font mb-3">
+                            Subscribe to our newsletter for special
+                        </div>
+                        <div class="inputBtn">
+                            <div>
+                                <input type="text" placeholder="Enter your email please" class="newLtrEmail">
+                            </div>
+                            <div>
+                                <button class="btns newltrBtn">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newLtrAwd">
+                        <div class="newLtrText cust-medium-font mb-3 pt-5">
+                            Certification
+                        </div>
+                        <div class="certImg">
+                            <div class="footerCertImg">
+                                <div class="footerCertperImg ftrImg1">
+                                    <img src="img/sponser-1.png">
+                                </div>
+                                <div class="footerCertperImg">
+                                    <img src="img/sponser-2.png">
+                                </div>
+                                <div class="footerCertperImg">
+                                    <img src="img/sponser-3.png">
+                                </div>
+                                <div class="footerCertperImg">
+                                    <img src="img/sponser-4.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyRiht text-end mt-4 cust-Sml-font">
+                        @ 2021 Chirag Jewellers. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollTop" id="scrollTop" onclick="toTop()">
+        <img src="img/top-1.png">
+    </div>
+    <script src="logic.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            let wholeHeader = document.querySelector('.wholeHeader');
+            let headerImgJs = document.getElementById('headerImgJs');
+            let scrollTop = document.getElementById('scrollTop');
+            let position = window.scrollY > 0;
+            wholeHeader.classList.toggle('custHeadClass', position);
+            position ? headerImgJs.src = 'img/logo.png' : headerImgJs.src = 'img/logo-2.png';
+
+            let scroll = document.documentElement.scrollTop;
+            scrollTop.classList.toggle('active', scroll >= 200);
+        });
+    </script>
+
+<script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+    $('.custom-btns-next-slider').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
+    $('.custom-btns-prev-slider').click(function () {
+        owl.trigger('prev.owl.carousel', [300]);
+    })
+</script>
+
+</body>
+
+</html>
