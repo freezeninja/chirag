@@ -26,6 +26,9 @@ body{
 
 
 /* utilities  */
+.txtFadedAll{
+    color: var(--light-txt);
+}
 .cust-medium-font{
     font-size: 18px;
 }
@@ -182,6 +185,13 @@ body{
     min-width: 80px;
     top: 2.5rem;
     display: none;
+}
+.logSign a{
+    text-decoration: none;
+    color: black;
+}
+.logSign a:hover{
+    color: var(--light-txt);
 }
 .logSign.active{
     display: block;
@@ -458,6 +468,24 @@ body{
 .wishProdCross{
     border: 1px solid black;
     padding: 10px;
+}
+
+
+/* product details  */
+.prodDetUImg img{
+    width: 100%;
+}
+.other-product-of-prodDet{
+    display: flex;
+    column-gap: 10px;
+    overflow-x: scroll;
+}
+.prod-det-other{
+    min-width: 160px;
+    cursor: pointer;
+}
+.prodDetLargetxt{
+    font-size: 28px;
 }
 
 @media(max-width: 1200px){
