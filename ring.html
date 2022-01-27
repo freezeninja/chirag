@@ -56,7 +56,9 @@
                         </div>
                     </div>
                     <div class="perIcon">
-                        <img src="img/fav.png" class="perHdImg">
+                        <a href="./wishlist.html">
+                            <img src="img/fav.png" class="perHdImg">
+                        </a>
                     </div>
                     <div class="perIcon">
                         <img src="img/cart.png" class="perHdImg">
@@ -460,7 +462,7 @@
     <section class="producySlider mt-5 mb-5">
         <div class="sliderHead text-center mb-5 mt-5">
             <h2 class="allHeading">
-                Other 
+                Other
                 <span class="sliderAlFnt">Categories</span>
             </h2>
         </div>
@@ -613,33 +615,33 @@
         });
     </script>
 
-<script>
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 3
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
             }
-        }
-    })
-    $('.custom-btns-next-slider').click(function () {
-        owl.trigger('next.owl.carousel');
-    })
-    $('.custom-btns-prev-slider').click(function () {
-        owl.trigger('prev.owl.carousel', [300]);
-    })
-</script>
+        })
+        $('.custom-btns-next-slider').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.custom-btns-prev-slider').click(function () {
+            owl.trigger('prev.owl.carousel', [300]);
+        })
+    </script>
 
 </body>
 
