@@ -2,6 +2,8 @@
 let NavIcon = document.getElementById('NavIcon');
 NavIcon.addEventListener('click', ()=>{
     let downHeader = document.getElementById('downHeader');
+    let wholeHeader = document.querySelector('#wholeHeader');
+    wholeHeader.classList.toggle('active')
     downHeader.classList.toggle('active');
     NavIcon.classList.toggle('active');
     if(NavIcon.classList.contains('active')){

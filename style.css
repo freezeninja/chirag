@@ -36,12 +36,24 @@ body{
     font-size: 12px;
 }
 .btns{
-    border: none;
+    border: 1px solid var(--main-color);
     outline: none;
     background-color: var(--main-color);
     color: var(--light-footerbg);
     padding: 5px 15px;
     font-size: 18px;
+}
+.btns:hover{
+    background-color: var(--white-color);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+.btns a{
+    text-decoration: none;
+    color: var(--light-footerbg);
+}
+.btns:hover > a{
+    color: var(--main-color);
 }
 .scrollTop{
     position: fixed;
@@ -65,6 +77,12 @@ body{
 .upperHeader{
     padding: .3rem 1rem;
 }
+.headerLogo a{
+    text-decoration: none;
+}
+#headerImg2Js{
+    display: none;
+}
 .headerLogo img{
     max-width: 127px;
 }
@@ -84,6 +102,10 @@ body{
 .wholeHeader.custHeadClass .upperHeader{
     box-shadow: 0px 1px 11px -2px var(--main-color);
 }
+.wholeHeader.active .upperHeader{
+    box-shadow: none;
+}
+
 .headerIcon{
     display: flex;
     margin: auto 0;
@@ -142,6 +164,7 @@ body{
 }
 .notHomeDoen{
     background-color: var(--main-color);
+    border-bottom: none;
 }
 .customNavCss{
     display: flex;
@@ -191,7 +214,7 @@ body{
     color: black;
 }
 .logSign a:hover{
-    color: var(--light-txt);
+    color: var(--main-color);
 }
 .logSign.active{
     display: block;
@@ -205,6 +228,14 @@ body{
 }
 .nav-link:hover{
     color: var(--light-txt);
+}
+.nav-item:hover > .dropdown-menu{
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate3d(0px, 45px, 0px);
+    display: block;
+    top: -3px;
 }
 
 /* banner  */
@@ -273,6 +304,9 @@ body{
     text-decoration: none;
     color:var(--light-txt);
 }
+.footerLinks a:hover{
+    color: var(--main-color);
+}
 .newLtrText,.copyRiht{
     color: var(--light-txt);
 }
@@ -310,6 +344,9 @@ body{
 }
 .perFTrSclImg a{
     text-decoration: none;
+}
+.perFTrSclImg a img:hover{
+    opacity: .6;
 }
 
 /* slider */
@@ -425,7 +462,10 @@ body{
 /* allimg btn  */
 .all-Img-Btn{
   display: grid;
-  grid-template-columns: 42% 16% 42%;
+  grid-template-columns: 1fr auto 1fr;
+}
+.allimgBtnbox{
+    margin: 0 10px;
 }
 .allLeftImg1, .allrightImg1{
     margin: auto;
@@ -487,6 +527,177 @@ body{
 .prodDetLargetxt{
     font-size: 28px;
 }
+.ProdSizeBtn{
+    padding: 15px;
+    border: 1px solid var(--light-txt);
+    display: inline-block;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+.ProdSizeBtn:hover{
+    background-color: var(--light-txt);
+    color: var(--white-color);
+}
+.prodDetQty{
+    display: flex;
+}
+.qtyTxt{
+    margin: auto 0;
+    padding-right: 8px;
+}
+.QtyChange-box{
+    padding: 8px 15px;
+    border: 1px solid var(--light-txt);
+    cursor: pointer;
+}
+.QtyLogoProdDet{
+    position: relative;
+    top: -9%;
+    right: -20%;
+}
+.QtyLogoProdDet i{
+    font-size: 22px;
+}
+.prodDetaiButton{
+    display: flex;
+    column-gap: 10px;
+}
+.ProdSizeBtn.active{
+    background-color: var(--light-txt);
+    color: var(--white-color);
+}
+
+
+/* sign up  */
+.signUpIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perSUpInTxt{
+    font-size: 20px;
+    color: var(--light-txt);
+    margin-right: 15px;
+    margin: auto 15px auto 0;
+    text-align: end;
+}
+.perSignUpIn{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.perInputSUpIn{
+    min-width: 500px;
+}
+.perInputSUpIn input{
+    border: 1px solid var(--main-color);
+    outline: none !important;
+    padding: 10px;
+    width: 100%;
+}
+.TextInptSUpIn input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+.CheckboxMsg{
+    color: var(--light-txt);
+    font-size: 20px;
+    position: relative;
+    top: -12%;
+}
+.altSigncontent span{
+    font-size: 20px;
+}
+.altSigncontent span a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.altSigncontent .signUpIn-sIn{
+    padding-right: 3px;
+    margin-right: 8px;
+    border-right: 1px solid var(--main-color);
+}
+
+
+/* cart  */
+.tableBoxCart{
+    display: flex;
+    justify-content: center;
+}
+.cartWishEmpty{
+    font-size: 18px;
+}
+.productTableCart{
+    min-width: 350px;
+}
+.QPT{
+    min-width: 200px;
+}
+.upperTrCartTable td{
+    border: 1px solid var(--light-txt);
+    color: var(--light-txt);
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+}
+.DownCartTable td{
+    border: 1px solid var(--light-txt);
+}
+.cartProdImg img{
+    max-width: 100px;
+    margin: 8px;
+}
+.cartProdCont{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.countCart{
+    display: flex;
+    justify-content: center;
+}
+.cartPlus, .cartMinus{
+    width: 20px;
+    height: 20px;
+    color: var(--light-txt);
+    border: 1px solid var(--light-txt);
+    margin-right: 3px;
+    cursor: pointer;
+}
+.cartPlus{
+    margin-bottom: 3px;
+}
+.cartMinus i{
+    position: relative;
+    top: -20%;
+}
+.cart-count-box{
+    width: 40px;
+    height: 43px;
+    border: 1px solid var(--light-txt);
+}
+.CartCountspan{
+    position: relative;
+    top: 20%;
+}
+.cartDownBtn{
+    display: flex;
+    justify-content: space-between;
+}
+.orderSum{
+    margin: auto 0;
+}
+
+/* checkout  */
+.CheckoutInputTxt{
+    border: 1px solid var(--light-txt);
+    outline: none;
+    padding: 8px;
+}
+.checkoutsmlBoxes{
+    width: 75%;
+}
+.checkoutLargrBoxes{
+    width: 88%;
+}
 
 @media(max-width: 1200px){
     /* header  */
@@ -509,6 +720,11 @@ body{
   .downHeader.active .doenHdCont{
       background-color: var(--main-color);
   }
+
+  /* cart  */
+  .cartContent{
+    overflow-x: scroll
+}
 }
 @media(max-width: 990px){
     /* header  */
@@ -516,9 +732,15 @@ body{
         max-width: 100px;
     }
 
-     /* ring  */
-     .all-Img-Btn{
-        grid-template-columns: 30% 40% 30%;
+    /* sign up  */
+    .perSignUpIn{
+        grid-template-columns: repeat(1, auto);
+    }
+    .perSUpInTxt{
+        text-align: start;
+    }
+    .perInputSUpIn{
+        min-width: 80Vw;
     }
 }
 
