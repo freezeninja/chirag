@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chirag - Checkout</title>
 
-     <!-- fontawsome  -->
-     <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
+    <!-- fontawsome  -->
+    <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
 
-     <!-- bootstrap  -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-         crossorigin="anonymous"></script>
- 
-     <!-- custom  -->
-     <link rel="stylesheet" href="style.css">
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- custom  -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wholeHeader headerNotHomeWhole" id="wholeHeader">
         <div class="upperHeader">
@@ -84,7 +86,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">New arrival</a>
+                        <a class="nav-link active" aria-current="page" href="./arrival.html">New arrival</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -120,44 +122,142 @@
         </button>
     </div>
 
+    <section class="wholeCheckOut">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="TextInptSUpIn mb-2">
+                        <input type="checkbox"> <span class="CheckboxMsg">Billing address</span>
+                    </div>
+                    <div class="TextInptSUpIn mb-5">
+                        <input type="checkbox"> <span class="CheckboxMsg">Shipping address</span>
+                    </div>
+                    <div class="FLnmame">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="checkOutBoxes mb-3">
+                                    <p class="mb-1 txtFadedAll">First name:</p>
+                                    <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="checkOutBoxes mb-3">
+                                    <p class="mb-1 txtFadedAll">Last name:</p>
+                                    <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Company name: (optional)</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
+                    </div>
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Street Address:</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes mb-2"
+                            placeholder="House No. / Street Name">
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes"
+                            placeholder="Apartment, Suite, Unit, etc (optional)">
+                    </div>
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Town / City:</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
+                    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="TextInptSUpIn mb-2">
-                    <input type="checkbox"> <span class="CheckboxMsg">Billing adress</span>
-                 </div>
-                <div class="TextInptSUpIn mb-5">
-                    <input type="checkbox"> <span class="CheckboxMsg">Shipping adress</span>
-                 </div>
-                 <div class="FLnmame">
-                     <div class="row">
-                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="checkOutBoxes mb-3">
-                                <p class="mb-1 txtFadedAll">First name:</p>
-                                <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
-                             </div>
-                         </div>
-                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="checkOutBoxes mb-3">
-                                <p class="mb-1 txtFadedAll">Last name:</p>
-                                <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="checkOutBoxes mb-3">
-                    <p class="mb-1 txtFadedAll">Company name: (optional)</p>
-                    <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
-                 </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="TextInptSUpIn mb-5">
-                    <input type="checkbox"> <span class="CheckboxMsg">Ship to a different adress</span>
-                 </div>
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Postalcode / Zip:</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
+                    </div>
+                    <div class="pMNo">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="checkOutBoxes mb-3">
+                                    <p class="mb-1 txtFadedAll">Phone No:</p>
+                                    <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="checkOutBoxes mb-3">
+                                    <p class="mb-1 txtFadedAll">Mobile No:</p>
+                                    <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Email Id:</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="TextInptSUpIn checkoutCheckBox">
+                        <input type="checkbox"> <span class="CheckboxMsg">Ship to a different address</span>
+                    </div>
+                    <div class="FLnmame">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="checkOutBoxes mb-3">
+                                    <p class="mb-1 txtFadedAll">First name:</p>
+                                    <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="checkOutBoxes mb-3">
+                                    <p class="mb-1 txtFadedAll">Last name:</p>
+                                    <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Street Address:</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes mb-2"
+                            placeholder="House No. / Street Name">
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes"
+                            placeholder="Apartment, Suite, Unit, etc (optional)">
+                    </div>
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Town / City:</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
+                    </div>
+
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Postalcode / Zip:</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
+                    </div>
+                    <div class="pMNo">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="checkOutBoxes mb-3">
+                                    <p class="mb-1 txtFadedAll">Phone No:</p>
+                                    <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="checkOutBoxes mb-3">
+                                    <p class="mb-1 txtFadedAll">Mobile No:</p>
+                                    <input type="text" class="CheckoutInputTxt checkoutsmlBoxes">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">Email Id:</p>
+                        <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="wholeCheckOut">
+        <div class="container">
+            <div class="checkoutOrdDet">
+                <div class="orderDteTxt"><p class="wishlistHead">Order details:</p></div>
+                <div class="orderDetImg"><img src="img/ring/line-2.png" class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
 
     <div class="footer">
         <div class="footerCont pt-5 pb-5 container">
@@ -244,7 +344,7 @@
                         </div>
                     </div>
                     <div class="copyRiht text-end mt-4 cust-Sml-font">
-                        @ 2021 Chirag Jewellers. All Rights Reserved
+                        @ 2022 Chirag Jewellers. All Rights Reserved
                     </div>
                 </div>
             </div>
@@ -271,4 +371,5 @@
         });
     </script>
 </body>
+
 </html>

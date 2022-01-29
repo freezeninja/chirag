@@ -687,17 +687,42 @@ body{
 }
 
 /* checkout  */
+.checkoutCheckBox{
+    margin-bottom: 5.2rem;
+}
+.wholeCheckOut .container{
+    padding-right: var(--bs-gutter-x,6.75rem);
+    padding-left: var(--bs-gutter-x,6.75rem);
+}
 .CheckoutInputTxt{
     border: 1px solid var(--light-txt);
     outline: none;
-    padding: 8px;
+    padding: 5px;
+}
+.wholeCheckOut .row{
+    --bs-gutter-x: 4.5rem;
 }
 .checkoutsmlBoxes{
-    width: 75%;
+    width: 100%;
 }
 .checkoutLargrBoxes{
-    width: 88%;
+    width: 100%;
 }
+.checkoutOrdDet{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.orderDteTxt{
+    margin-right: 10px;
+}
+.orderDetImg{
+    margin: auto 0;
+}
+.orderDetImg img{
+    width: 100%;
+}
+
+
 
 @media(max-width: 1200px){
     /* header  */
