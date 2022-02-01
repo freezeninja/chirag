@@ -94,7 +94,7 @@
                             Collection
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Rani Sa</a></li>
+                            <li><a class="dropdown-item" href="./ranisa.html">Rani Sa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -102,6 +102,12 @@
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <div class="loadingImgBox" id="loadingImgBox">
+        <div class="loadingImg">
+            <img src="img/other/wheel-animation.gif">
         </div>
     </div>
 
@@ -122,6 +128,7 @@
         </button>
     </div>
 
+    <!-- main checkout  -->
     <section class="wholeCheckOut">
         <div class="container">
             <div class="row">
@@ -153,6 +160,18 @@
                         <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
                     </div>
                     <div class="checkOutBoxes mb-3">
+                        <div class="chekoutSelect checkoutCountry d-flex">
+                            <div class="checkoutMsgCountry"><p class="txtFadedAll m-0">Country / Region: </p></div>
+                            <div class="selectDropdownCheckout">
+                                <select name="Country">
+                                    <option value="India" selected>India</option>
+                                    <option value="OtherCountry">Other Country</option>
+                                </select>
+                                <span class="slectCheckoutIcon"><i class="fas fa-sort-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkOutBoxes mb-3">
                         <p class="mb-1 txtFadedAll">Street Address:</p>
                         <input type="text" class="CheckoutInputTxt checkoutLargrBoxes mb-2"
                             placeholder="House No. / Street Name">
@@ -162,6 +181,19 @@
                     <div class="checkOutBoxes mb-3">
                         <p class="mb-1 txtFadedAll">Town / City:</p>
                         <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
+                    </div>
+
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">State:</p>
+                        <div class="checkoutState chekoutSelect">
+                            <div class="selectDropdownCheckout">
+                                <select name="State">
+                                    <option value="Westbengal" selected>West Bengal</option>
+                                    <option value="OtherState">Other State</option>
+                                </select>
+                                <span class="slectCheckoutIcon"><i class="fas fa-sort-down"></i></span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="checkOutBoxes mb-3">
@@ -210,6 +242,18 @@
                         </div>
                     </div>
                     <div class="checkOutBoxes mb-3">
+                        <div class="chekoutSelect d-flex">
+                            <div class="checkoutMsgCountry"><p class="txtFadedAll m-0">Country / Region: </p></div>
+                            <div class="selectDropdownCheckout">
+                                <select name="Country">
+                                    <option value="India" selected>India</option>
+                                    <option value="OtherCountry">Other Country</option>
+                                </select>
+                                <span class="slectCheckoutIcon"><i class="fas fa-sort-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkOutBoxes mb-3">
                         <p class="mb-1 txtFadedAll">Street Address:</p>
                         <input type="text" class="CheckoutInputTxt checkoutLargrBoxes mb-2"
                             placeholder="House No. / Street Name">
@@ -221,6 +265,18 @@
                         <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
                     </div>
 
+                    <div class="checkOutBoxes mb-3">
+                        <p class="mb-1 txtFadedAll">State:</p>
+                        <div class="checkoutState chekoutSelect">
+                            <div class="selectDropdownCheckout">
+                                <select name="State">
+                                    <option value="Westbengal" selected>West Bengal</option>
+                                    <option value="OtherState">Other State</option>
+                                </select>
+                                <span class="slectCheckoutIcon"><i class="fas fa-sort-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="checkOutBoxes mb-3">
                         <p class="mb-1 txtFadedAll">Postalcode / Zip:</p>
                         <input type="text" class="CheckoutInputTxt checkoutLargrBoxes">
@@ -250,14 +306,86 @@
         </div>
     </section>
 
-    <section class="wholeCheckOut">
+    <section class="wholeCheckOut2 mt-5 mb-3">
         <div class="container">
             <div class="checkoutOrdDet">
-                <div class="orderDteTxt"><p class="wishlistHead">Order details:</p></div>
+                <div class="orderDteTxt">
+                    <p class="wishlistHead">Order details:</p>
+                </div>
                 <div class="orderDetImg"><img src="img/ring/line-2.png" class="img-fluid"></div>
             </div>
         </div>
     </section>
+
+    <section class="wholeCheckOut2 mb-5">
+        <div class="container">
+            <div class="row txtFadedAll checkOutAllTableRow" style="overflow-x: auto;">
+                <div class="col-6 upperRowCheckoutTable">Product</div>
+                <div class="col-6 upperRowCheckoutTable">Total</div>
+                <div class="col-6 downRowCheckoutTable">
+                    <div class="row">
+                        <div class="col-10">Diamond ring (R-445)</div>
+                        <div class="col-2">X 1</div>
+                    </div>
+                </div>
+                <div class="col-6 downRowCheckoutTable">
+                    Rs. 204,000.00
+                </div>
+                <div class="col-6 downRowCheckoutTable">
+                    Subtotal
+                </div>
+                <div class="col-6 downRowCheckoutTable">
+                    Rs. 204,000.00
+                </div>
+                <div class="col-6 downRowCheckoutTable">
+                    GST
+                </div>
+                <div class="col-6 downRowCheckoutTable">
+                    Rs. 20,000.00
+                </div>
+                <div class="col-6 downRowCheckoutTable">
+                    Total
+                </div>
+                <div class="col-6 downRowCheckoutTable">
+                    Rs. 224,000.00
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="wholeCheckOut2 mb-4">
+        <div class="container">
+            <div class="row txtFadedAll">
+                <div class="col-12 checvkoutPayments">
+                    <input type="radio" name="payments" id="paymentsOption">
+                    <label for="paymentsOption">Cash on delivery</label>
+                    <p class="m-0 chPaymentDownTxt">Pay with cash upon delivery</p>
+                </div>
+                <div class="col-12 checvkoutPayments">
+                    <input type="radio" name="payments" id="paymentsOption">
+                    <label for="paymentsOption">Pay by Razorpay</label>
+                    <p class="m-0 chPaymentDownTxt">Card, Net banking, Wallet & UPI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wholeCheckOut2 mb-5">
+        <div class="container">
+            <div class="downCheckout row">
+                <div class="checkoutPaymentMsg col-lg-6 col-md-7 col-sm-12 txtFadedAll text-start">Your personal data will be used to process your order, support your
+                    experience throughout this website, and for other purposes described in our privacy policy
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-12"></div>
+                <div class="placeOrderCheckout col-lg-3 col-md-3 col-sm-12 text-end">
+                    <button class="btns">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <div class="footer">
         <div class="footerCont pt-5 pb-5 container">
@@ -272,10 +400,10 @@
                         <a href="#">Our story</a>
                     </div>
                     <div class="footerLinks">
-                        <a href="#">Journey of a Diamond</a>
+                        <a href="./diamondjourney.html">Journey of a Diamond</a>
                     </div>
                     <div class="footerLinks">
-                        <a href="#">Contact us</a>
+                        <a href="./contactus.html">Contact us</a>
                     </div>
                     <div class="footerLinks">
                         <a href="#">Request for a call back</a>
@@ -359,15 +487,12 @@
             let wholeHeader = document.querySelector('.wholeHeader');
             let headerImgJs = document.getElementById('headerImgJs');
             let headerImg2Js = document.getElementById('headerImg2Js');
-            let scrollTop = document.getElementById('scrollTop');
             let position = window.scrollY > 0;
             wholeHeader.classList.toggle('custHeadClass', position);
 
             !position ? headerImgJs.style.display = 'block' : headerImgJs.style.display = 'none';
             position ? headerImg2Js.style.display = 'block' : headerImg2Js.style.display = 'none';
 
-            let scroll = document.documentElement.scrollTop;
-            scrollTop.classList.toggle('active', scroll >= 200);
         });
     </script>
 </body>

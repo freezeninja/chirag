@@ -94,7 +94,7 @@
                             Collection
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Rani Sa</a></li>
+                            <li><a class="dropdown-item" href="./ranisa.html">Rani Sa</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -104,6 +104,13 @@
             </div>
         </div>
     </div>
+
+    <div class="loadingImgBox" id="loadingImgBox">
+        <div class="loadingImg">
+            <img src="img/other/wheel-animation.gif">
+        </div>
+    </div>
+
 
     <div class="container mt-4 mb-4">
         <div class="all-Img-Btn text-center">
@@ -190,10 +197,10 @@
                         <a href="#">Our story</a>
                     </div>
                     <div class="footerLinks">
-                        <a href="#">Journey of a Diamond</a>
+                        <a href="./diamondjourney.html">Journey of a Diamond</a>
                     </div>
                     <div class="footerLinks">
-                        <a href="#">Contact us</a>
+                        <a href="./contactus.html">Contact us</a>
                     </div>
                     <div class="footerLinks">
                         <a href="#">Request for a call back</a>
@@ -278,15 +285,12 @@
             let wholeHeader = document.querySelector('.wholeHeader');
             let headerImgJs = document.getElementById('headerImgJs');
             let headerImg2Js = document.getElementById('headerImg2Js');
-            let scrollTop = document.getElementById('scrollTop');
             let position = window.scrollY > 0;
             wholeHeader.classList.toggle('custHeadClass', position);
 
             !position ? headerImgJs.style.display = 'block' : headerImgJs.style.display = 'none';
             position ? headerImg2Js.style.display = 'block' : headerImg2Js.style.display = 'none';
 
-            let scroll = document.documentElement.scrollTop;
-            scrollTop.classList.toggle('active', scroll >= 200);
         });
 
         let cartPlus = document.querySelector('.cartPlus'),

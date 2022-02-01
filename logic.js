@@ -1,3 +1,19 @@
+window.addEventListener('load', () => {
+    const loadingImgBox = document.getElementById('loadingImgBox');
+    setTimeout(function () {
+        loadingImgBox.style.opacity = '0';
+        loadingImgBox.style.transition = '1.5s ease-in-out';
+        setTimeout(function () {
+            loadingImgBox.style.display = 'none';
+        }, 1500)
+    }, 1500)
+});
+
+window.addEventListener('scroll', ()=>{
+    let scrollTop = document.getElementById('scrollTop');
+    let scroll = document.documentElement.scrollTop;
+    scrollTop.classList.toggle('active', scroll >= 400);
+});
 
 let NavIcon = document.getElementById('NavIcon');
 NavIcon.addEventListener('click', ()=>{

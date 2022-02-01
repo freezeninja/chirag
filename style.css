@@ -25,6 +25,27 @@ body{
 }
 
 
+/* loader  */
+.loadingImgBox{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+    transform: all 0.5s ease-out;
+    z-index: 1000;
+}
+.loadingImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loadingImg img{
+    max-width: 100px;
+}
+
 /* utilities  */
 .txtFadedAll{
     color: var(--light-txt);
@@ -115,7 +136,7 @@ body{
     cursor: pointer;
 }
 .perIcon img:hover{
-    filter: opacity(.5);
+    filter: invert(71%) sepia(79%) saturate(92%) hue-rotate(332deg) brightness(98%) contrast(98%);
 }
 .hambBar{
     margin: auto 0;
@@ -346,7 +367,8 @@ body{
     text-decoration: none;
 }
 .perFTrSclImg a img:hover{
-    opacity: .6;
+    /* opacity: .6; */
+    filter: invert(71%) sepia(79%) saturate(92%) hue-rotate(332deg) brightness(98%) contrast(98%);
 }
 
 /* slider */
@@ -364,7 +386,7 @@ body{
 }
 .custom-btns-prev-slider{
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 5%;
     pointer-events: initial;
     z-index: 10;
@@ -372,7 +394,7 @@ body{
 }
 .custom-btns-next-slider{
     position: absolute;
-    top: 55%;
+    top: 58%;
     right: 5%;
    z-index: 10;
    cursor: pointer;
@@ -690,7 +712,7 @@ body{
 .checkoutCheckBox{
     margin-bottom: 5.2rem;
 }
-.wholeCheckOut .container{
+.wholeCheckOut .container, .wholeCheckOut2 .container{
     padding-right: var(--bs-gutter-x,6.75rem);
     padding-left: var(--bs-gutter-x,6.75rem);
 }
@@ -701,6 +723,9 @@ body{
 }
 .wholeCheckOut .row{
     --bs-gutter-x: 4.5rem;
+}
+.wholeCheckOut2 .row{
+    --bs-gutter-x: .5rem;
 }
 .checkoutsmlBoxes{
     width: 100%;
@@ -721,8 +746,135 @@ body{
 .orderDetImg img{
     width: 100%;
 }
+.downRowCheckoutTable{
+    border: 1px solid var(--light-txt);
+}
+.checkOutAllTableRow > div{
+    padding: 3px 5px;
+}
+.upperRowCheckoutTable{
+    font-size: 18px;
+}
+.checvkoutPayments label{
+    font-size: 20px;
+    margin-left: 1rem;
+}
+.checvkoutPayments input{
+    cursor: pointer;
+}
+.checvkoutPayments{
+    padding: 30px 20px;
+    border: 1px solid var(--light-txt);
+}
+.chPaymentDownTxt{
+    position: relative;
+    left: 3%;
+}
+.downCheckout{
+    justify-content: space-between;
+}
+.downCheckout.row>*{
+    padding-left: 0;
+    padding-right: 0;
+}
+.checkoutPaymentMsg{
+    font-size: 12px;
+}
+.checkoutMsgCountry{
+    margin: auto .3rem auto 0;
+}
+.chekoutSelect select{
+    appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+    padding: 4px; 
+    border: 1px solid var(--light-txt);
+    cursor: pointer;
+    color: var(--light-txt);
+}
+.chekoutSelect select option{
+    color: var(--light-txt);
+}
+.checkoutCountry select{
+    min-width: 170px;
+}
+.checkoutState select{
+    min-width: 100%;
+}
+.chekoutSelect section:focus{
+    outline: none !important;
+    border: none;
+}
+.selectDropdownCheckout{
+    position: relative;
+}
+.slectCheckoutIcon i{
+    color: var(--main-color);
+    font-size: 38px;
+    position: absolute;
+    top: -0.6rem;
+    right: 3%;
+}
 
 
+/* contact us  */
+.perContactBox{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.perInputSUpIn textarea{
+    border: 1px solid var(--main-color);
+    min-height: 200px;
+}
+.CuTeatArea{
+    margin: 0;
+}
+.perSignUpIncontact{
+    display: grid;
+    grid-template-columns: 21% 78%;
+}
+.nameMobileContact{
+    display: flex;
+}
+.contactSubMitBtn{
+    padding: 2px 37px;
+}
+.ConatctPara span{
+    font-size: 20px;
+}
+.ConatctYSpan{
+    color: var(--main-color);
+}
+.diamondSmlTxt{
+    font-size: 15px;
+}
+
+/* rani sa  */
+.ranisaBack{
+    background-color: #f5f4ec;
+}
+.raniSaupeerRow{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.ranisaRow{
+    padding-bottom: 7rem;
+}
+
+/* journy diamond  */
+.smallPara-dimndBox{
+    background-color: var(--main-color);
+}
+.diamondLeft_box{
+    padding-left: 5rem;
+}
+
+@media(max-width: 1413px){
+    .perSignUpIncontact input{
+        width: 70%;
+    }
+}
 
 @media(max-width: 1200px){
     /* header  */
@@ -767,6 +919,23 @@ body{
     .perInputSUpIn{
         min-width: 80Vw;
     }
+
+    /* checkout  */
+    .wholeCheckOut .container, .wholeCheckOut2 .container{
+        padding-right: var(--bs-gutter-x,.75rem);
+        padding-left: var(--bs-gutter-x,.75rem);
+    }
+
+    /* contact  */
+    .perContactBox{
+        grid-template-columns: auto;
+    }
+    .perSignUpIncontact{
+        grid-template-columns: auto;
+    }
+    .perSignUpIncontact input{
+        width: 100%;
+    }
 }
 
 @media(max-width: 800px){
@@ -781,6 +950,10 @@ body{
     }
     .right-Sorting .perSortingBox:not(:last-child){
         margin-right: 0;
+    }
+    /* checkout  */
+    .wholeCheckOut .row{
+        --bs-gutter-x: .5rem;
     }
 }
 

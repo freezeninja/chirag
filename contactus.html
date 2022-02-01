@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirag - Sign in</title>
+    <title>Contact Us</title>
 
-    <!-- fontawsome  -->
-    <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
+     <!-- fontawsome  -->
+     <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
 
-    <!-- bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <!-- custom  -->
-    <link rel="stylesheet" href="style.css">
+     <!-- bootstrap  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+ 
+     <!-- custom  -->
+     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="wholeHeader headerNotHomeWhole" id="wholeHeader">
         <div class="upperHeader">
@@ -104,7 +102,6 @@
             </div>
         </div>
     </div>
-
     <div class="loadingImgBox" id="loadingImgBox">
         <div class="loadingImg">
             <img src="img/other/wheel-animation.gif">
@@ -112,63 +109,100 @@
     </div>
 
 
-    <div class="container mt-5 mb-5">
+    <div class="container mt-4 mb-3">
         <div class="all-Img-Btn text-center">
             <div class="allLeftImg1"><img src="img/ring/line.png" class="img-fluid"></div>
             <div class="allimgBtnbox">
-                <p class="wishlistHead">Sign in</p>
+                <p class="wishlistHead">Connect with us</p>
             </div>
             <div class="allrightImg1"><img src="img/ring/line-2.png" class="img-fluid"></div>
         </div>
     </div>
 
-    <div class="container mb-5">
-        <div class="signUpIn">
-            <div class="signUpInContent">
-                <form>
-                    <div class="perSignUpIn mb-3">
-                        <div class="perSUpInTxt">
-                            Email / Mobile:
-                        </div>
-                        <div class="perInputSUpIn">
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="perSignUpIn mb-3">
-                        <div class="perSUpInTxt">
-                            Password:
-                        </div>
-                        <div class="perInputSUpIn">
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="sinUpBtn text-end">
-                        <button class="btns" type="submit" disabled="true">Sign in</button>
-                    </div>
-                </form>
+    <div class="concernMsgCU txtFadedAll text-center mb-5">
+        <p>Should you wish to share your concerns, we are listening</p>
+    </div>
 
-                <div class="alternateSignBox mt-5 text-center">
-                    <div class="altSigncontent">
-                        <span>
-                            <span class="txtFadedAll">
-                                New User 
-                            </span>
-                            <span class="signUpIn-sIn">
-                                <a href="./signup.html">
-                                    Sign up
-                                </a>
-                            </span>
-                            <span class="forgetPW">
-                                <a href="#">
-                                    Forgot Password?
-                                </a>
-                            </span>
-                        </span>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-3 perSignUpIncontact">
+                        <div class="perSUpInTxt">
+                            Name:
+                        </div>
+                        <div class="perInputSUpIn">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-3 perSignUpIncontact">
+                        <div class="perSUpInTxt">
+                            Mobile No.:
+                        </div>
+                        <div class="perInputSUpIn">
+                            <input type="text">
+                        </div>
                     </div>
                 </div>
             </div>
+           
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-3 perContactBox">
+                <div class="perSUpInTxt">
+                    Email Id:
+                </div>
+                <div class="perInputSUpIn">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-2 perContactBox">
+                <div class="perSUpInTxt CuTeatArea pe-3">
+                    Message:
+                </div>
+                <div class="perInputSUpIn">
+                   <textarea name="contactText" id="contactTextArea" style="width: 100%;"></textarea>
+                </div>
+            </div>
+            <div class="col-12 text-end mb-5">
+                <button class="btns contactSubMitBtn">Submit</button>
+            </div>
         </div>
     </div>
+
+    <div class="container mt-4 mb-3">
+        <div class="all-Img-Btn text-center">
+            <div class="allLeftImg1"><img src="img/ring/line.png" class="img-fluid"></div>
+            <div class="allimgBtnbox">
+                <p class="wishlistHead">Store locator:</p>
+            </div>
+            <div class="allrightImg1"><img src="img/ring/line-2.png" class="img-fluid"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="ContactUsMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.9257290183555!2d88.34948821479148!3d22.544454785197203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027719edb0a0e7%3A0xcd02026af3bb0d91!2sChirag%20Jewellers!5e0!3m2!1sen!2sin!4v1643621207054!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="shareBtnContact text-end mb-5">
+            <img src="img/other/share.png" class="img-fluid">
+        </div>
+        <div class="DownPaymentContactUs mb-5">
+            <p class="m-0 ConatctPara text-center">
+                <span class="ConatctYSpan">Address: </span>
+                <span class="txtFadedAll">2nd flr aspiration vintage, 12, pretoria street, kolkata, west bengal 700071.</span>
+            </p>
+            <p class="m-0 ConatctPara text-center">
+                <span class="ConatctYSpan">Phone Number: </span>
+                <span class="txtFadedAll">(033) 2282 7114 / 46001238 / 22821697 </span>
+                <span class="ConatctYSpan">| Mobile Number:  </span>
+                <span class="txtFadedAll">+91 9830747476</span>
+            </p>
+            <p class="m-0 ConatctPara text-center">
+                <span class="ConatctYSpan">Email Id: </span>
+                <span class="txtFadedAll">chiragjewellers@gmail.com</span>
+            </p>
+        </div>
+    </div>
+
 
     <div class="footer">
         <div class="footerCont pt-5 pb-5 container">
@@ -261,7 +295,6 @@
             </div>
         </div>
     </div>
-
     <div class="scrollTop" id="scrollTop" onclick="toTop()">
         <img src="img/top-1.png">
     </div>
@@ -280,5 +313,4 @@
         });
     </script>
 </body>
-
 </html>
