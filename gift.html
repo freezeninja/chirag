@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirag - Gift a diamond</title>
+    <!-- fontawsome  -->
+    <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- custom  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wholeHeader headerNotHomeWhole" id="wholeHeader">
+        <div class="upperHeader">
+            <div class="upperHdCont">
+                <div class="hambBar">
+                    <span class="NavIcon" id="NavIcon"><i class="fas fa-bars"></i></span>
+                </div>
+                <div class="chiragLogo">
+                    <div class="headerLogo">
+                        <a href="./index.html">
+                            <img src="img/logo-2.png" id="headerImgJs" class="img-fluid">
+                            <img src="img/logo.png" id="headerImg2Js" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="headerIcon">
+                    <div class="perIcon loginIconHd">
+                        <img src="img/profile.png" class="perHdImg" id="loginJs">
+                        <div class="logSign">
+                            <ul>
+                                <li>
+                                    <a href="./signup.html">
+                                        Sign up
+                                    </a>
+                                </li>
+                                <li class="mt-1">
+                                    <a href="./signin.html">
+                                        Sign in
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="perIcon">
+                        <a href="./wishlist.html">
+                            <img src="img/fav.png" class="perHdImg">
+                        </a>
+                    </div>
+                    <div class="perIcon">
+                        <a href="./cart.html">
+                            <img src="img/cart.png" class="perHdImg">
+                        </a>
+                    </div>
+                    <div class="perIcon searchBoxAll">
+                        <img src="img/search.png" class="perHdImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downHeader" id="downHeader">
+            <div class="doenHdCont notHomeDoen">
+                <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Earrings</a></li>
+                            <li><a class="dropdown-item" href="./ring.html">Ring</a></li>
+                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                            <li><a class="dropdown-item" href="#">Necklace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./arrival.html">New arrival</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Collection
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./ranisa.html">Rani Sa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gift.html">Gift a diamond</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="loadingImgBox" id="loadingImgBox">
+        <div class="loadingImg">
+            <img src="img/other/wheel-animation.gif">
+        </div>
+    </div>
+
+    <div class="wholeban">
+        <div class="bannerCar">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <img src="img/select-dimond.png" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1">
+                    <img src="img/unselect-dimond-1.png" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2">
+                    <img src="img/select-dimond.png" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                    <img src="img/select-dimond.png" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4">
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/other/banner.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/other/banner.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/other/banner.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/other/banner.png" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center mt-5 mb-5">
+        <h2 class="allHeading txtFadedAll">
+            <span class="sliderAlFnt">Customise </span>
+            your cart
+        </h2>
+    </div>
+
+    <section class="giftBox mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Cut
+                    </div>
+                    <div class="gift_cut_content">
+                        <div class="gift_cut_upprt">
+                            <div class="d-flex cut_images">
+                                <div class="per_cut_img">
+                                    <img src="img/other/diamond.png">
+                                </div>
+                                <div class="per_cut_img">
+                                    <img src="img/other/diamond2.png">
+                                </div>
+                                <div class="per_cut_img">
+                                    <img src="img/other/diamond3.png">
+                                </div>
+                            </div>
+                            <div class="d-flex cut_images mt-3">
+                                <div class="per_cut_img">
+                                    <img src="img/other/diamond4.png">
+                                </div>
+                                <div class="per_cut_img">
+                                    <img src="img/other/diamond-5.png">
+                                </div>
+                                <div class="per_cut_img">
+                                    <img src="img/other/diamond-6.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Color
+                    </div>
+                    <div class="giftDownContent">
+                        <div class="giftDownBox">
+                            <div class="gift_down_box_upper d-flex">
+                                <div class="perGift_item gift_color_item">
+                                    <p class="m-0 text-center">D</p>
+                                </div>
+                                <div class="perGift_item gift_color_item">
+                                    <p class="m-0 text-center">E
+                                    </p>
+                                </div>
+                                <div class="perGift_item gift_color_item">
+                                    <p class="m-0 text-center">F</p>
+                                </div>
+                                <div class="perGift_item gift_color_item active">
+                                    <p class="m-0 text-center">G</p>
+                                </div>
+                            </div>
+                            <div class="gift_down_box_upper mt-3 d-flex">
+                                <div class="perGift_item gift_color_item">
+                                    <p class="m-0 text-center">H</p>
+                                </div>
+                                <div class="perGift_item gift_color_item">
+                                    <p class="m-0 text-center">I
+                                    </p>
+                                </div>
+                                <div class="perGift_item gift_color_item">
+                                    <p class="m-0 text-center">J</p>
+                                </div>
+                                <div class="perGift_item gift_color_item">
+                                    <p class="m-0 text-center">K</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Carat
+                    </div>
+                    <div class="giftInput_boxes">
+                        <div class="Gift_input">
+                            <input value="2" min="0" max="20" type="range" onchange="caratChange()"
+                                id="caratFirstInput">
+                            <input value="17" min="0" max="20" type="range" onchange="caratChange()"
+                                id="caratSecdInput">
+                        </div>
+                    </div>
+                    <div class="input_values mt-4 d-flex txtFadedAll">
+                        <div class="text-center">
+                            <span id="caratVal1">2</span>
+                        </div>
+                        <div class="text-center">
+                            <span id="caratVal2">17</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Clarity
+                    </div>
+                    <div class="giftDownContent">
+                        <div class="giftDownBox">
+                            <div class="gift_down_box_upper d-flex">
+                                <div class="perGift_item gift_clarity_item">
+                                    <p class="m-0 text-center">VVS1</p>
+                                </div>
+                                <div class="perGift_item gift_clarity_item active">
+                                    <p class="m-0 text-center">VVS2</p>
+                                </div>
+                                <div class="perGift_item gift_clarity_item">
+                                    <p class="m-0 text-center">VS1</p>
+                                </div>
+                            </div>
+                            <div class="gift_down_box_upper mt-3 d-flex">
+                                <div class="perGift_item gift_clarity_item">
+                                    <p class="m-0 text-center">VS1</p>
+                                </div>
+                                <div class="perGift_item gift_clarity_item">
+                                    <p class="m-0 text-center">SL1</p>
+                                </div>
+                                <div class="perGift_item gift_clarity_item">
+                                    <p class="m-0 text-center">SL2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Polish
+                    </div>
+                    <div class="giftDownContent">
+                        <div class="giftDownBox">
+                            <div class="gift_down_box_upper d-flex">
+                                <div class="perGift_item gift_plish_item">
+                                    <p class="m-0 text-center">Excellent</p>
+                                </div>
+                                <div class="perGift_item gift_plish_item active">
+                                    <p class="m-0 text-center">V.Good</p>
+                                </div>
+                            </div>
+                            <div class="gift_down_box_upper d-flex mt-3">
+                                <div class="perGift_item gift_plish_item">
+                                    <p class="m-0 text-center">Good</p>
+                                </div>
+                                <div class="perGift_item gift_plish_item">
+                                    <p class="m-0 text-center">Fair</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Certification
+                    </div>
+                    <div class="giftDownContent">
+                        <div class="giftDownBox">
+                            <div class="gift_down_box_upper d-flex">
+                                <div class="perGift_item gift_certifict_item active">
+                                    <p class="m-0 text-center">GIA</p>
+                                </div>
+                                <div class="perGift_item gift_certifict_item">
+                                    <p class="m-0 text-center">IGI</p>
+                                </div>
+                                <div class="perGift_item gift_certifict_item">
+                                    <p class="m-0 text-center">HRD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Symmetry
+                    </div>
+                    <div class="giftDownContent">
+                        <div class="giftDownBox">
+                            <div class="gift_down_box_upper d-flex">
+                                <div class="perGift_item gift_symentry_item">
+                                    <p class="m-0 text-center">Excellent</p>
+                                </div>
+                                <div class="perGift_item gift_certifict_item">
+                                    <p class="m-0 text-center">V.Good</p>
+                                </div>
+                                <div class="perGift_item gift_certifict_item active">
+                                    <p class="m-0 text-center">Good</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Cut
+                    </div>
+                    <div class="giftDownContent">
+                        <div class="giftDownBox">
+                            <div class="gift_down_box_upper d-flex">
+                                <div class="perGift_item gift_symentry_item gift_cut2_item">
+                                    <p class="m-0 text-center">H&A</p>
+                                </div>
+                                <div class="perGift_item gift_certifict_item gift_cut2_item active">
+                                    <p class="m-0 text-center">Excellent</p>
+                                </div>
+                                <div class="perGift_item gift_certifict_item gift_cut2_item">
+                                    <p class="m-0 text-center">V.Good</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Fluorescence
+                    </div>
+                    <div class="giftDownContent">
+                        <div class="giftDownBox">
+                            <div class="gift_down_box_upper d-flex">
+                                <div class="perGift_item gift_flurence_item">
+                                    <p class="m-0 text-center">None</p>
+                                </div>
+                                <div class="perGift_item gift_flurence_item active">
+                                    <p class="m-0 text-center">Faint</p>
+                                </div>
+                                <div class="perGift_item gift_flurence_item">
+                                    <p class="m-0 text-center">Medium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="gift_upper_head text-center mb-3">
+                        Price
+                    </div>
+                    <div class="giftInput_boxes">
+                        <div class="Gift_input">
+                            <input value="5000" min="5000" max="5000000" step="1000" type="range"
+                                onchange="priceChange()" id="priceFirstInput">
+                            <input value="4000000" min="5000" max="5000000" step="1000" type="range"
+                                onchange="priceChange()" id="priceSecdInput">
+                        </div>
+                    </div>
+                    <div class="input_values mt-4 d-flex txtFadedAll">
+                        <div class="text-center">
+                            <span id="PriceVal1">5000</span> <span>/-</span>
+                        </div>
+                        <div class="text-center">
+                            <span id="PriceVal2">4000000</span> <span>/-</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="giftTable-Box">
+            <table class="mb-2">
+                <tr class="giftUpperHeader_table">
+                    <td class="gift_upper_td text-center">SELECT</td>
+                    <td class="gift_upper_td text-center">SHAPE</td>
+                    <td class="gift_upper_td text-center">CARAT</td>
+                    <td class="gift_upper_td text-center">COLOUR</td>
+                    <td class="gift_upper_td text-center">CLARITY</td>
+                    <td class="gift_upper_td text-center">CUT</td>
+                    <td class="gift_upper_td text-center">POLISH</td>
+                    <td class="gift_upper_td text-center">SYMMETRY</td>
+                    <td class="gift_upper_td text-center">CERT</td>
+                    <td class="gift_upper_td text-center">FLUOR</td>
+                    <td class="gift_upper_td text-center">CERT NO.</td>
+                    <td class="gift_upper_td text-center">DETAILS</td>
+                    <td class="gift_upper_td text-center">PRICE</td>
+                </tr>
+            </table>
+            <table>
+                <tr class="giftLower_tr">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr lightColrTableGift">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr lightColrTableGift">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr lightColrTableGift">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr lightColrTableGift">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+                <tr class="giftLower_tr lightColrTableGift">
+                    <td class="text-center gift_lower_td">
+                        <input type="checkbox">
+                    </td>
+                    <td class="text-center gift_lower_td txtFadedAll">Round</td>
+                    <td class="text-center gift_lower_td txtFadedAll">17.44</td>
+                    <td class="text-center gift_lower_td txtFadedAll">D</td>
+                    <td class="text-center gift_lower_td txtFadedAll">VVS1</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">V.Good</td>
+                    <td class="text-center gift_lower_td txtFadedAll">IGI</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Faint</td>
+                    <td class="text-center gift_lower_td txtFadedAll">211056M</td>
+                    <td class="text-center gift_lower_td txtFadedAll">View</td>
+                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                </tr>
+            </table>
+        </div>
+        <div class="giftBtns mt-3 text-end">
+            <button class="btns">Compare</button>
+            <button class="btns">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footerCont pt-5 pb-5 container">
+            <div class="footerHeading">
+                <p class="footerText">
+                    Explore Chirag
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="footerLinks">
+                        <a href="./ourstory.html">Our story</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="./diamondjourney.html">Journey of a Diamond</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="./contactus.html">Contact us</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="./callback.html">Request for a call back</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#">Download brochure</a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#"></a>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#"></a>
+                    </div>
+                    <div class="fbInstFtr mt-5 mb-3">
+                        <span class="perFTrSclImg">
+                            <a href="https://www.facebook.com/kolkataindia123" target="_blank">
+                                <img src="img/facebook.png">
+                            </a>
+                        </span>
+                        <span class="perFTrSclImg">
+                            <a href="https://www.instagram.com/chiragjewellersindia" target="_blank">
+
+                                <img src="img/instagram.png">
+                            </a>
+                        </span>
+                        <span class="perFTrSclImg">
+                            <a href="https://twitter.com/chiragjeweller3?t=t4x9nFTxmnNkpdr0a2MQJw&s=08" target="_blank">
+
+                                <img src="img/twiter.png">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="NewLetrSub">
+                        <div class="newLtrText cust-medium-font mb-3">
+                            Subscribe to our newsletter for special
+                        </div>
+                        <div class="inputBtn">
+                            <div>
+                                <input type="text" placeholder="Enter your email please" class="newLtrEmail">
+                            </div>
+                            <div>
+                                <button class="btns newltrBtn">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newLtrAwd">
+                        <div class="newLtrText cust-medium-font mb-3 pt-5">
+                            Certification
+                        </div>
+                        <div class="certImg">
+                            <div class="footerCertImg">
+                                <div class="footerCertperImg ftrImg1">
+                                    <img src="img/sponser-1.png">
+                                </div>
+                                <div class="footerCertperImg">
+                                    <img src="img/sponser-2.png">
+                                </div>
+                                <div class="footerCertperImg">
+                                    <img src="img/sponser-3.png">
+                                </div>
+                                <div class="footerCertperImg">
+                                    <img src="img/sponser-4.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyRiht text-end mt-4 cust-Sml-font">
+                        @ 2022 Chirag Jewellers. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollTop" id="scrollTop" onclick="toTop()">
+        <img src="img/top-1.png">
+    </div>
+    <script src="logic.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            let wholeHeader = document.querySelector('.wholeHeader');
+            let headerImgJs = document.getElementById('headerImgJs');
+            let headerImg2Js = document.getElementById('headerImg2Js');
+            let position = window.scrollY > 0;
+            wholeHeader.classList.toggle('custHeadClass', position);
+
+            !position ? headerImgJs.style.display = 'block' : headerImgJs.style.display = 'none';
+            position ? headerImg2Js.style.display = 'block' : headerImg2Js.style.display = 'none';
+
+        });
+
+        let caratFirstInput = document.getElementById('caratFirstInput');
+        let caratSecdInput = document.getElementById('caratSecdInput');
+        let caratVal1 = document.getElementById('caratVal1'),
+            caratVal2 = document.getElementById('caratVal2');
+        function caratChange() {
+            let caratFVal = parseFloat(caratFirstInput.value);
+            let caratSVal = parseFloat(caratSecdInput.value);
+            if (caratFVal > caratSVal) {
+                let tempVal = caratSVal;
+                caratSVal = caratFVal;
+                caratFVal = tempVal;
+            }
+            caratVal1.innerText = caratFVal;
+            caratVal2.innerText = caratSVal;
+        }
+
+        let priceFirstInput = document.getElementById('priceFirstInput'),
+            priceSecdInput = document.getElementById('priceSecdInput'),
+            PriceVal1 = document.getElementById('PriceVal1'),
+            PriceVal2 = document.getElementById('PriceVal2');
+        function priceChange() {
+            let priceFVal = parseFloat(priceFirstInput.value);
+            let priceSVal = parseFloat(priceSecdInput.value);
+            if (priceFVal > priceSVal) {
+                let temp2Val = priceSVal;
+                priceSVal = priceFVal;
+                priceFVal = temp2Val;
+            }
+            PriceVal1.innerText = priceFVal;
+            PriceVal2.innerText = priceSVal;
+        }
+
+
+        let gift_color_item = document.querySelectorAll('.gift_color_item'),
+            gift_clarity_item = document.querySelectorAll('.gift_clarity_item'),
+            gift_plish_item = document.querySelectorAll('.gift_plish_item'),
+            gift_certifict_item = document.querySelectorAll('.gift_certifict_item'),
+            gift_symentry_item = document.querySelectorAll('.gift_symentry_item'),
+            gift_cut2_item = document.querySelectorAll('.gift_cut2_item'),
+            gift_flurence_item = document.querySelectorAll('.gift_flurence_item');
+
+        function forEachFunc(PerNodeList) {
+            PerNodeList.forEach((elem) => {
+                elem.addEventListener('click', () => {
+                    PerNodeList.forEach((elem2) => {
+                        if (elem != elem2) {
+                            elem2.classList.remove('active');
+                        }
+                    });
+                    elem.classList.add('active');
+                });
+            });
+        }
+
+        forEachFunc(gift_color_item);
+        forEachFunc(gift_clarity_item);
+        forEachFunc(gift_plish_item);
+        forEachFunc(gift_certifict_item);
+        forEachFunc(gift_symentry_item);
+        forEachFunc(gift_cut2_item);
+        forEachFunc(gift_flurence_item);
+
+    </script>
+</body>
+
+</html>
