@@ -39,3 +39,14 @@ logSign.addEventListener('click', ()=>{
 function toTop(){
     document.documentElement.scrollTop = 0;
 }
+
+// serch 
+let serachCliked_box = document.querySelector('.serachCliked_box'),
+    searchBoxAll = document.querySelector('.searchBoxAll'),
+    search_cross = document.getElementById('search_cross');
+    searchBoxAll.addEventListener('click', ()=>{
+        serachCliked_box.classList.add('active');
+    });
+    search_cross.addEventListener('click', ()=>{
+        serachCliked_box.classList.remove('active');
+    });

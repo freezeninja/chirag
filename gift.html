@@ -140,6 +140,20 @@
         </div>
     </div>
 
+    <div class="serachCliked_box">
+        <div class="serachInput_content">
+            <div class="search_cross text-center mb-4" id="search_cross">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="relativeSearch">
+                <input type="text">
+                <span class="searchInput_img">
+                    <img src="img/other/search.png">
+                </span>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container text-center mt-5 mb-5">
         <h2 class="allHeading txtFadedAll">
@@ -158,7 +172,7 @@
                     <div class="gift_cut_content">
                         <div class="gift_cut_upprt">
                             <div class="d-flex cut_images">
-                                <div class="per_cut_img">
+                                <div class="per_cut_img active">
                                     <img src="img/other/diamond.png">
                                 </div>
                                 <div class="per_cut_img">
@@ -651,7 +665,7 @@
                             </a>
                         </span>
                         <span class="perFTrSclImg">
-                            <a href="https://twitter.com/chiragjeweller3?t=t4x9nFTxmnNkpdr0a2MQJw&s=08" target="_blank">
+                            <a href="https://twitter.com/chiragjeweller3" target="_blank">
 
                                 <img src="img/twiter.png">
                             </a>
@@ -661,7 +675,7 @@
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="NewLetrSub">
                         <div class="newLtrText cust-medium-font mb-3">
-                            Subscribe to our newsletter for special
+                           Sign up to receive exclusive offers and news
                         </div>
                         <div class="inputBtn">
                             <div>
@@ -758,7 +772,8 @@
             gift_certifict_item = document.querySelectorAll('.gift_certifict_item'),
             gift_symentry_item = document.querySelectorAll('.gift_symentry_item'),
             gift_cut2_item = document.querySelectorAll('.gift_cut2_item'),
-            gift_flurence_item = document.querySelectorAll('.gift_flurence_item');
+            gift_flurence_item = document.querySelectorAll('.gift_flurence_item'),
+            per_cut_img = document.querySelectorAll('.per_cut_img');
 
         function forEachFunc(PerNodeList) {
             PerNodeList.forEach((elem) => {
@@ -780,6 +795,7 @@
         forEachFunc(gift_symentry_item);
         forEachFunc(gift_cut2_item);
         forEachFunc(gift_flurence_item);
+        forEachFunc(per_cut_img);
 
     </script>
 </body>
