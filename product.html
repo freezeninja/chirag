@@ -412,6 +412,15 @@
                 elem.classList.add('active');
             })
         });
+
+        let ProdDetQtyNum = document.getElementById('ProdDetQtyNum'),
+        QtyLogoProdDet= document.querySelector('.QtyLogoProdDet');
+        let value = parseFloat(ProdDetQtyNum.innerText);
+        let count = 0;
+        QtyLogoProdDet.addEventListener('click', ()=>{
+            count++
+            ProdDetQtyNum.innerText = count;
+        });
     </script>
 
     <script>

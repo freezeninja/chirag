@@ -627,6 +627,7 @@ body{
 }
 .QtyLogoProdDet i{
     font-size: 22px;
+    color: var(--main-color);
 }
 .prodDetaiButton{
     display: flex;
@@ -1133,6 +1134,7 @@ body{
         -moz-appearance: none;
         width: 28px;
         height: 13px;
+        border-radius: 0;
         border: none;
         background-color: var(--light-txt);
         cursor: pointer;
@@ -1165,7 +1167,7 @@ body{
     }
 
 
-/* xyx  */
+/* compare  */
 .smallTxtNewProd{
     font-size: 10px;
 }
@@ -1188,7 +1190,20 @@ body{
 .shadedTr_another{
     background-color: #dfe1e2;
 }
-
+.Compare_box_img{
+    background-color: #e7e9ec;    
+    position: relative;
+    min-height: 500px;
+}
+.compareImg-middle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50% );
+}
+.QtyLogoProdDet i{
+    color: var(--main-color);
+}
 
 @media(max-width: 1430px){
     .perSignUpIncontact input{
@@ -1368,6 +1383,9 @@ body{
     }
     .another_first_table{
         margin-bottom: 10px;
+    }
+    .Compare_box_img{
+        min-height: 400px;
     }
 }
 @media(max-width: 475px){

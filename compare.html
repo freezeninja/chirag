@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirag - product another</title>
+    <title>Chirag - Compare</title>
 
     <!-- fontawsome  -->
     <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
@@ -128,15 +128,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="prodDetUImg">
-                        <img src="img/xyz/thumb-2.png" id="Product-Imge-Main">
+                    <div class="Compare_box_img">
+                        <div class="compareImg-middle">
+                            <img src="img/other/78diamond.png" id="compareImg_main" class="img-fluid">
+                        </div>
                     </div>
                     <div class="other-product-of-prodDet otherProd_not_overflow pt-2">
-                        <div class="prod-det-other2" id="0">
-                            <img src="img/xyz/thumb1.png" class="img-fluid">
+                        <div class="prod-det-other2" id="0" onclick="compareImg(this.id)">
+                            <img src="img/compare/thumb1.png" class="img-fluid">
                         </div>
-                        <div class="prod-det-other2" id="1">
-                            <img src="img/xyz/thumb-2.png" class="img-fluid">
+                        <div class="prod-det-other2" id="1" onclick="compareImg(this.id)">
+                            <img src="img/compare/thumb-2.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -171,7 +173,7 @@
                                     <td class="another_prod_td">CARAT:</td>
                                     <td class="another_prod_td">17.44</td>
                                 </tr>
-                                <tr class="another_prod_tr">
+                                <tr class="another_prod_tr shadedTr_another">
                                     <td class="another_prod_td">COLOUR:</td>
                                     <td class="another_prod_td">D</td>
                                 </tr>
@@ -179,7 +181,7 @@
                                     <td class="another_prod_td">CLARITY:</td>
                                     <td class="another_prod_td">VVS1</td>
                                 </tr>
-                                <tr class="another_prod_tr">
+                                <tr class="another_prod_tr shadedTr_another">
                                     <td class="another_prod_td">CUT:</td>
                                     <td class="another_prod_td">V.Good</td>
                                 </tr>
@@ -187,7 +189,7 @@
                         </div>
                         <div class="another_second_table txtFadedAll">
                             <table>
-                                <tr class="another_prod_tr">
+                                <tr class="another_prod_tr shadedTr_another">
                                     <td class="another_prod_td">POLISH:</td>
                                     <td class="another_prod_td">V.Good</td>
                                 </tr>
@@ -195,7 +197,7 @@
                                     <td class="another_prod_td">SYMMETRY:</td>
                                     <td class="another_prod_td">V.Good</td>
                                 </tr>
-                                <tr class="another_prod_tr">
+                                <tr class="another_prod_tr shadedTr_another">
                                     <td class="another_prod_td">CERT:</td>
                                     <td class="another_prod_td">IGI</td>
                                 </tr>
@@ -203,7 +205,7 @@
                                     <td class="another_prod_td">FLUOR:</td>
                                     <td class="another_prod_td">Faint</td>
                                 </tr>
-                                <tr class="another_prod_tr">
+                                <tr class="another_prod_tr shadedTr_another">
                                     <td class="another_prod_td">CERT. NO.</td>
                                     <td class="another_prod_td">211056M</td>
                                 </tr>
@@ -222,10 +224,18 @@
                         </div>
                         <div class="prodDetaiButton mt-4">
                             <div class="PerProdDet-button">
-                                <button class="btns">Wishlist</button>
+                                <button class="btns">
+                                    <a href="./wishlist.html">
+                                        Wishlist
+                                    </a>
+                                </button>
                             </div>
                             <div class="PerProdDet-button">
-                                <button class="btns">Add to cart</button>
+                                <button class="btns">
+                                    <a href="./cart.html">
+                                        Add to cart
+                                    </a>
+                                </button>
                             </div>
                             <div class="PerProdDet-button">
                                 <button class="btns">Buy now</button>
@@ -348,27 +358,25 @@
 
         });
 
-        // let ProdImgId = document.getElementById('Product-Imge-Main');
-        // let imgArr = ['img/ring/product-1.png', 'img/ring/product-2.png', 'img/ring/product-3.png', 'img/ring/product-4.png', 'img/ring/product-2.png', 'img/ring/product-3.png'];
-        // function ProdDetailImgChange(id){
-        //     imgArr.forEach((e,i)=>{
-        //         if(id == i){
-        //             ProdImgId.src = e;
-        //         }
-        //     });
-        // }
+        let ProdDetQtyNum = document.getElementById('ProdDetQtyNum'),
+        QtyLogoProdDet= document.querySelector('.QtyLogoProdDet');
+        let value = parseFloat(ProdDetQtyNum.innerText);
+        let count = 0;
+        QtyLogoProdDet.addEventListener('click', ()=>{
+            count++
+            ProdDetQtyNum.innerText = count;
+        });
 
-        // let ProdSizeBtn = document.querySelectorAll('.ProdSizeBtn');
-        // ProdSizeBtn.forEach((elem)=>{
-        //     elem.addEventListener('click', ()=>{
-        //         ProdSizeBtn.forEach((elem2)=>{
-        //             if(elem != elem2){
-        //                 elem2.classList.remove('active');
-        //             }
-        //         })
-        //         elem.classList.add('active');
-        //     })
-        // });
+        let compareImg_main = document.getElementById('compareImg_main');
+        let imgArr = ['img/compare/thumb1.png', 'img/compare/thumb-2.png']
+        let prodOther = document.querySelectorAll('.prod-det-other2');
+        function compareImg(id){
+            imgArr.forEach((e,i)=>{
+                if(id == i){
+                    compareImg_main.src = e;
+                }
+            })
+        }
     </script>
 
 </body>
