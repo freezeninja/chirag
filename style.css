@@ -502,7 +502,10 @@ body{
     top: 58%;
 }
 .sliderNotHome{
-    top: 55%;
+    top: 60%;
+}
+.sliderHomeProd{
+    top: 61%;
 }
 .s-content a{
     color: var(--light-txt);
@@ -720,7 +723,10 @@ body{
     background-color: var(--light-txt);
     color: var(--white-color);
 }
-
+.headerIconProd{
+   justify-content: flex-start;
+   column-gap: 5px;
+}
 
 /* sign up  */
 .signUpIn{
