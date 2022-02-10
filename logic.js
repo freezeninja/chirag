@@ -29,11 +29,11 @@ NavIcon.addEventListener('click', ()=>{
     }
 });
 
-let logSign = document.getElementById('loginJs');
-logSign.addEventListener('click', ()=>{
-    let lgSBox = document.querySelector('.logSign');
-    lgSBox.classList.toggle('active');
-})
+// let logSign = document.getElementById('loginJs');
+// logSign.addEventListener('click', ()=>{
+//     let lgSBox = document.querySelector('.logSign');
+//     lgSBox.classList.toggle('active');
+// })
 
 // scrolltop 
 function toTop(){

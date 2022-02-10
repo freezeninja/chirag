@@ -45,41 +45,55 @@
                         </a>
                     </div>
                 </div>
-                <div class="headerIcon">
-                    <div class="perIcon loginIconHd">
-                        <img src="img/hdi1.png" class="perHdImg" id="loginJs">
-                        <div class="logSign">
-                            <ul>
-                                <li>
-                                    <a href="./signup.html">
-                                        Sign up
-                                    </a>
-                                </li>
-                                <li class="mt-1">
-                                    <a href="./signin.html">
-                                        Sign in
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="headerIconUpper">
+                    <div class="headerIcon">
+                        <div class="perIcon">
+                            <a href="./wishlist.html">
+                                <img src="img/hdi2.png" class="perHdImg">
+                            </a>
                         </div>
-                    </div>
-                    <div class="perIcon">
-                        <a href="./wishlist.html">
-                            <img src="img/hdi2.png" class="perHdImg">
-                        </a>
-                    </div>
-                    <div class="perIcon">
-                        <a href="./cart.html">
-                            <img src="img/hdi3.png" class="perHdImg">
-                        </a>
-                    </div>
-                    <div class="perIcon searchBoxAll" id="searchBoxAll">
-                        <img src="img/hdi4.png" class="perHdImg">
+                        <div class="perIcon">
+                            <a href="./cart.html">
+                                <img src="img/hdi3.png" class="perHdImg">
+                            </a>
+                        </div>
+                        <div class="perIcon searchBoxAll" id="searchBoxAll">
+                            <img src="img/hdi4.png" class="perHdImg">
+                        </div>
+                        <div class="perIcon loginIconHd">
+                            <img src="img/hdi1.png" class="perHdImg">
+                            <span class="signUp_signIn signupHome">
+                                <a href="./signup.html"> Sign up</a>/<a href="./signin.html">Sign in</a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="downHeader" id="downHeader">
+            <div class="headerIconLower">
+                <div class="headerIcon">
+                    <div class="perIcon">
+                        <a href="./wishlist.html">
+                            <img src="img/fav.png">
+                        </a>
+                    </div>
+                    <div class="perIcon">
+                        <a href="./cart.html">
+                            <img src="img/cart.png">
+                        </a>
+                    </div>
+                    <div class="perIcon searchBoxAll" id="searchBoxAll">
+                        <img src="img/search.png">
+                    </div>
+                    <div class="perIcon loginIconHd">
+                        <img src="img/profile.png">
+                        <span class="signUp_signIn signupHome">
+                            <a href="./signup.html"> Sign up</a>/<a href="./signin.html">Sign in</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
             <div class="doenHdCont">
                 <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
@@ -228,7 +242,7 @@
     <div class="iframeCont">
         <iframe
             src="https://www.youtube.com/embed/ENQmpVZswys?autoplay=0&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&widget_referrer=https%3A%2F%2Fwww.chiragjewellers.com%2Fonlinestore%2F&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fwww.chiragjewellers.com&widgetid=1"
-            frameborder="0" width="100%" height="360"></iframe>
+            frameborder="0" width="100%" height="580" autoplay></iframe>
     </div>
 
 
@@ -278,8 +292,8 @@
                 </div>
             </div>
         </div>
-        <div class="custom-btns-prev-slider sliderLRArr"><img src="img/left-arrow.png" alt=""></div>
-        <div class="custom-btns-next-slider sliderLRArr"><img src="img/right-arrow.png" alt=""></div>
+        <div class="custom-btns-prev-slider sliderLRArr sliderHome"><img src="img/left-arrow.png" alt=""></div>
+        <div class="custom-btns-next-slider sliderLRArr sliderHome"><img src="img/right-arrow.png" alt=""></div>
     </section>
 
     <div class="footer">
@@ -290,7 +304,7 @@
                 </p>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-8 col-md-12 col-sm-12">
                     <div class="footerLinks">
                         <a href="./ourstory.html">Our story</a>
                     </div>
@@ -325,17 +339,17 @@
                             </a>
                         </span>
                         <span class="perFTrSclImg">
-                                                       <a href="https://twitter.com/chiragjeweller3" target="_blank">
+                            <a href="https://twitter.com/chiragjeweller3" target="_blank">
 
                                 <img src="img/twiter.png">
                             </a>
                         </span>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                     <div class="NewLetrSub">
                         <div class="newLtrText cust-medium-font mb-3">
-                           Sign up to receive exclusive offers and news
+                            Sign up to receive exclusive offers and news
                         </div>
                         <div class="inputBtn">
                             <div>
@@ -357,7 +371,7 @@
                                     <img src="img/sponser-1.png">
                                 </div>
                                 <div class="footerCertperImg">
-                                    <img src="img/sponser-2.png">
+                                    <img src="img/sponser-2.png" style="position: relative; left: 5px;">
                                 </div>
                                 <div class="footerCertperImg">
                                     <img src="img/sponser-3.png">
@@ -391,7 +405,7 @@
         var owl = $('.owl-carousel');
         owl.owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 20,
             nav: false,
             dots: false,
             autoplay: true,
@@ -415,14 +429,16 @@
         })
     </script>
     <script>
-        let imgSrcArr = ['img/profile.png', 'img/fav.png', 'img/cart.png', 'img/search.png'];
-        let imgSrcArr2 = ['img/hdi1.png', 'img/hdi2.png', 'img/hdi3.png', 'img/hdi4.png'];
+        let imgSrcArr = ['img/fav.png', 'img/cart.png', 'img/search.png', 'img/profile.png'];
+        let imgSrcArr2 = ['img/hdi2.png', 'img/hdi3.png', 'img/hdi4.png', 'img/hdi1.png'];
+        let signUp_signIn = document.querySelector('.signUp_signIn');
         window.addEventListener('scroll', () => {
             let wholeHeader = document.querySelector('.wholeHeader');
             let headerImgJs = document.getElementById('headerImgJs');
             let headerImg2Js = document.getElementById('headerImg2Js');
             let position = window.scrollY > 0;
             wholeHeader.classList.toggle('custHeadClass', position);
+            signUp_signIn.classList.toggle('sign_up_in_cust', position)
             !position ? headerImgJs.style.display = 'block' : headerImgJs.style.display = 'none';
             position ? headerImg2Js.style.display = 'block' : headerImg2Js.style.display = 'none';
             let images = document.querySelectorAll('.perHdImg');
