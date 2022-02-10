@@ -367,17 +367,20 @@ body{
 .textCatBox{
     padding-right: 12px;
 }
+.categoriesBox{
+    margin-top: 8rem;
+}
 .categoriesBox .row{
     margin-left: .5rem;
     margin-right: .5rem;
-    --bs-gutter-x: .5rem;
+    --bs-gutter-x: .7rem;
 }
 .perBoxcatg{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
     margin-right: 0.5rem;
 }
 .perbox1{
-    margin-bottom: .5rem;
+    margin-bottom: .7rem;
 }
 .cateImg{
     position: relative;
@@ -385,11 +388,15 @@ body{
 .discoverBtn a{
     text-decoration: none;
     color: var(--white-color);
+    padding: 5px 10px;
+    font-size: 20px;
 }
 .discoverBtn{
     position: absolute;
-    bottom: 8%;
+    bottom: 6%;
     left: 40%;
+    border: 1px solid white;
+    margin-top: 15px;
 }
 .normalCatTxt{
     max-width: 445px;
@@ -480,7 +487,6 @@ body{
 }
 .custom-btns-prev-slider{
     position: absolute;
-    top: 62%;
     left: 5%;
     pointer-events: initial;
     z-index: 10;
@@ -488,13 +494,15 @@ body{
 }
 .custom-btns-next-slider{
     position: absolute;
-    top: 62%;
     right: 5%;
    z-index: 10;
    cursor: pointer;
 }
 .sliderHome{
-    top: 53%;
+    top: 58%;
+}
+.sliderNotHome{
+    top: 55%;
 }
 .s-content a{
     color: var(--light-txt);
@@ -528,12 +536,11 @@ body{
     height: 100%;
 }
 .ring-product .row{
-    --bs-gutter-x: .8rem;
+    --bs-gutter-x: 1.1rem;
 }
 .perProduct-Ring{
-    margin-bottom: .5rem;
+    margin-bottom: .8rem;
 }
-
 /* banner select  */
 .perSortingBox select{
     appearance:none;
@@ -605,14 +612,23 @@ body{
 }
 .wishProd-Border{
     border: 1px solid var(--light-txt);
-    padding-top: .6rem;
-    padding-bottom: .6rem;
+    padding: .4rem;
+}
+.wishLishHr{
+    color: var(--main-color);
+}
+.wishlistProdTxt{
+    font-size: 18px;
+}
+.productwishlist .row{
+  --bs-gutter-x: 0;
 }
 .wishProdBtn{
     text-align: end;
 }
 .productwishlist .container{
-    padding-left: 5rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 .wishlistPerPod{
     position: relative;
@@ -620,13 +636,16 @@ body{
 .wishProdDelete{
     position: absolute;
     left: -4rem;
-    top: 45%;
+    top: 39%;
     cursor: pointer;
     pointer-events: initial;
 }
 .wishProdCross{
+    padding: 7px 11px;
     border: 1px solid black;
-    padding: 10px;
+}
+.wishProd-Img img{
+    max-width: 130px;
 }
 
 
@@ -636,8 +655,8 @@ body{
 }
 .other-product-of-prodDet{
     display: flex;
-    column-gap: 10px;
-    overflow-x: scroll;
+    column-gap: 20px;
+    margin-top: 20px;
 }
 .prod-det-other{
     min-width: 160px;
@@ -665,18 +684,33 @@ body{
     padding-right: 8px;
 }
 .QtyChange-box{
-    padding: 8px 15px;
+    padding: 8px;
+    min-width: 60px;
     border: 1px solid var(--light-txt);
     cursor: pointer;
-}
-.QtyLogoProdDet{
     position: relative;
-    top: -9%;
-    right: -20%;
 }
-.QtyLogoProdDet i{
+.prodIWhole_div{
+   position: absolute; 
+   right: 17%;
+   bottom: 1.3rem;
+}
+.QtyChange-box {
+    display: flex;
+}
+.Prod_detIDiv{
+    height: 8px;
+}
+.QtyChange-box div i{
     font-size: 22px;
+}
+.prod_det_qtyox div i{
+    color: var(--light-txt);
+    height: 7px;
+}
+.giftViewQty div i{
     color: var(--main-color);
+    height: 7px;
 }
 .prodDetaiButton{
     display: flex;
@@ -737,6 +771,23 @@ body{
     border-right: 1px solid var(--main-color);
 }
 
+.perContactInput{
+    margin: auto 0;
+}
+.perContactInput input{
+    border: 1px solid var(--main-color);
+    outline: none !important;
+    padding: 10px;
+    width: 100%;
+}
+.perContactInput_upper{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.perContactInput_upper2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
 
 /* cart  */
 .tableBoxCart{
@@ -811,8 +862,8 @@ body{
     margin-bottom: 5.2rem;
 }
 .wholeCheckOut .container, .wholeCheckOut2 .container{
-    padding-right: var(--bs-gutter-x,6.75rem);
-    padding-left: var(--bs-gutter-x,6.75rem);
+    padding-right: var(--bs-gutter-x,7.75rem);
+    padding-left: var(--bs-gutter-x,7.75rem);
 }
 .CheckoutInputTxt{
     border: 1px solid var(--light-txt);
@@ -909,12 +960,44 @@ body{
 }
 .slectCheckoutIcon i{
     color: var(--main-color);
-    font-size: 38px;
+    font-size: 28px;
     position: absolute;
-    top: -0.6rem;
-    right: 3%;
+    top: -11%;
+    z-index: 10;
+}
+.slectCheckCountry i{
+    right: 5%;
+}
+.selctCheckState i{
+    right: 2%;
+}
+.checvkoutPayments input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+    background-color: white;
 }
 
+.checvkoutPayments input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--main-color);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid var(--main-color);
+}
 
 /* contact us  */
 .perContactBox{
@@ -946,6 +1029,10 @@ body{
 }
 .diamondSmlTxt{
     font-size: 15px;
+}
+.contact_us_section .container{
+    padding-left: var(--bs-gutter-x,5rem);
+    padding-right: var(--bs-gutter-x,5rem);
 }
 
 /* rani sa  */
@@ -1032,12 +1119,18 @@ body{
 .story_golden_line{
     color: var(--main-color);
 }
+.story_upper_box{
+    position: relative;
+}
 .story_box{
-    padding: 5px 15px 15px 15px;
-    /* border-bottom: 1px solid var(--main-color);
+    position: absolute;
+    width: 97.3%;
+    top: 50%;
     border-left: 1px solid var(--main-color);
-    border-right: 1px solid var(--main-color); */
-   
+    border-right: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    padding-top: 22px;
+    padding-bottom: 12px;
 }
 
 /* call back  */
@@ -1051,8 +1144,6 @@ body{
     border-bottom: 1px solid var(--main-color);
     padding-bottom: 17px;
 }
-
-
 /* gift  */
 .gift_upper_head{
     background-color: var(--main-color);
@@ -1103,6 +1194,10 @@ body{
 .gift_lower_td{
     min-width: 100px;
 }
+.gift_lower_td a{
+    text-decoration: none;
+    color: var(--light-txt);
+}
 .giftUpperHeader_table{
     color: white;
     background-color: var(--main-color);
@@ -1122,7 +1217,8 @@ body{
     font-size: 13px;
 }
 .cut_images{
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 2rem;
 }
 .giftInput_boxes{
     display: flex;
@@ -1250,9 +1346,7 @@ body{
     top: 50%;
     transform: translate(-50%,-50% );
 }
-.QtyLogoProdDet i{
-    color: var(--main-color);
-}
+
 
 @media(max-width: 1430px){
     .perSignUpIncontact input{
@@ -1274,6 +1368,12 @@ body{
     /* footer  */
     .certImg{
         overflow-x: scroll;
+    }
+
+    /* wishlist  */
+    .productwishlist .container{
+        padding-left: 5rem;
+        padding-right: .75rem;
     }
 }
 
@@ -1308,7 +1408,26 @@ body{
     padding: 1rem;
    }
 }
+@media(max-width: 1025px){
+    .normalCatTxt{
+        /* ring  */
+        max-width: 390px;
+    }
+    .ring_req_btn{
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    .ringTxt p{
+        font-size: 12px;
+    }
 
+    /* contact  */
+    .contact_us_section .container{
+        padding-left: var(--bs-gutter-x,.75rem);
+        padding-right: var(--bs-gutter-x,.75rem);
+    }
+
+}
 @media(max-width: 990px){
     /* header  */
     .headerLogo img{
@@ -1343,9 +1462,9 @@ body{
     .perSUpInTxt{
         text-align: start;
     }
-    .perInputSUpIn{
+    /* .perInputSUpIn{
         min-width: 80Vw;
-    }
+    } */
 
     /* checkout  */
     .wholeCheckOut .container, .wholeCheckOut2 .container{
@@ -1362,6 +1481,9 @@ body{
     }
     .perSignUpIncontact input{
         width: 100%;
+    }
+    .perContactInput_upper, .perContactInput_upper2{
+        grid-template-columns: repeat(1, auto);
     }
 
     /* diamond  */
@@ -1383,6 +1505,11 @@ body{
     }
     .diamond-small-img{
         text-align: center;
+    }
+
+    /* wishlist  */
+    .wishProd-Img img{
+        max-width: 100%;
     }
 }
 
@@ -1431,6 +1558,11 @@ body{
         font-size: small;
     }
 }
+@media(max-width:537px){
+    .perInputSUpIn{
+        min-width: auto;
+    }
+}
 @media(max-width: 500px){
     /* header  */
     .headerLogo img{
@@ -1475,6 +1607,12 @@ body{
     }
     .PerProdDet-button{
         margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 400px){
+    .categoriesBox{
+        margin-top: 4rem;
     }
 }
 

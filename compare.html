@@ -231,9 +231,12 @@
                             <div class="qtyTxt">
                                 Qty:
                             </div>
-                            <div class="QtyChange-box">
+                            <div class="QtyChange-box giftViewQty">
                                 <span id="ProdDetQtyNum">1</span>
-                                <span class="QtyLogoProdDet"><i class="fas fa-sort-down"></i></span>
+                                <div class="prodIWhole_div">
+                                    <div class="Prod_detIDiv"><i class="fas fa-sort-up QtyLogoProdDetPlus"></i></div>
+                                    <div class="Prod_detIDiv"><i class="fas fa-sort-down QtyLogoProdDet"></i></div>
+                                </div>
                             </div>
                         </div>
                         <div class="prodDetaiButton mt-4">
@@ -319,7 +322,7 @@
                         </div>
                         <div class="inputBtn">
                             <div>
-                                <input type="text" placeholder="Enter your email please" class="newLtrEmail">
+                                <input type="text" class="newLtrEmail">
                             </div>
                             <div>
                                 <button class="btns newltrBtn">Subscribe</button>
@@ -375,13 +378,25 @@
         });
 
         let ProdDetQtyNum = document.getElementById('ProdDetQtyNum'),
-        QtyLogoProdDet= document.querySelector('.QtyLogoProdDet');
+        QtyLogoProdDet= document.querySelector('.QtyLogoProdDet'),
+        QtyLogoProdDetPlus = document.querySelector('.QtyLogoProdDetPlus');
         let value = parseFloat(ProdDetQtyNum.innerText);
-        let count = 0;
+        let count = value;
         QtyLogoProdDet.addEventListener('click', ()=>{
-            count++
+            console.log('hii9');
+            
+            count--
+            if(count <= 0){
+                count = 0
+            }
             ProdDetQtyNum.innerText = count;
         });
+        QtyLogoProdDetPlus.addEventListener('click', ()=>{
+            console.log('hi');
+            
+            count++
+            ProdDetQtyNum.innerText = count
+        })
 
         let compareImg_main = document.getElementById('compareImg_main');
         let imgArr = ['img/compare/thumb1.png', 'img/compare/thumb-2.png']
