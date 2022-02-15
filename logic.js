@@ -42,11 +42,16 @@ function toTop(){
 
 // serch 
 let serachCliked_box = document.querySelector('.serachCliked_box'),
-    searchBoxAll = document.querySelector('.searchBoxAll'),
+    searchBoxAll = document.querySelectorAll('.searchBoxAll'),
     search_cross = document.getElementById('search_cross');
-    searchBoxAll.addEventListener('click', ()=>{
-        serachCliked_box.classList.add('active');
-    });
+    // searchBoxAll.addEventListener('click', ()=>{
+    //     serachCliked_box.classList.add('active');
+    // });
     search_cross.addEventListener('click', ()=>{
         serachCliked_box.classList.remove('active');
     });
+    searchBoxAll.forEach((e)=>{
+        e.addEventListener('click', ()=>{
+            serachCliked_box.classList.add('active');
+        })
+    })

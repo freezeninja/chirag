@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="wholeHeader" id="wholeHeader">
+    <!-- <div class="wholeHeader" id="wholeHeader">
         <div class="upperHeader">
             <div class="upperHdCont">
                 <div class="hambBar">
@@ -126,8 +126,104 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <div class="wholeHeader headerNotHomeWhole" id="wholeHeader">
+        <div class="upperHeader">
+            <div class="upperHdCont">
+                <div class="hambBar">
+                    <span class="NavIcon" id="NavIcon"><i class="fas fa-bars"></i></span>
+                </div>
+                <div class="chiragLogo">
+                    <div class="headerLogo">
+                        <a href="./index.html">
+                            <img src="img/logo-2.png" id="headerImgJs" class="img-fluid">
+                            <img src="img/logo.png" id="headerImg2Js" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="headerIconUpper">
+                    <div class="headerIcon">
+                        <div class="perIcon">
+                            <a href="./wishlist.html">
+                                <img src="img/fav.png" class="perHdImg">
+                            </a>
+                        </div>
+                        <div class="perIcon">
+                            <a href="./cart.html">
+                                <img src="img/cart.png" class="perHdImg">
+                            </a>
+                        </div>
+                        <div class="perIcon searchBoxAll">
+                            <img src="img/search.png" class="perHdImg">
+                        </div>
+                        <div class="perIcon loginIconHd">
+                            <img src="img/profile.png" class="perHdImg">
+                            <span class="signUp_signIn signupNotHome">
+                                <a href="./signup.html"> Sign up</a>/<a href="./signin.html">Sign in</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downHeader" id="downHeader">
+            <div class="headerIconLower">
+                <div class="headerIcon">
+                    <div class="perIcon">
+                        <a href="./wishlist.html">
+                            <img src="img/fav.png">
+                        </a>
+                    </div>
+                    <div class="perIcon">
+                        <a href="./cart.html">
+                            <img src="img/cart.png">
+                        </a>
+                    </div>
+                    <div class="perIcon searchBoxAll" id="searchBoxAll">
+                        <img src="img/search.png">
+                    </div>
+                    <div class="perIcon loginIconHd">
+                        <img src="img/profile.png">
+                        <span class="signUp_signIn signupHome">
+                            <a href="./signup.html"> Sign up</a>/<a href="./signin.html">Sign in</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="doenHdCont notHomeDoen">
+                <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Earrings</a></li>
+                            <li><a class="dropdown-item" href="./ring.html">Ring</a></li>
+                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                            <li><a class="dropdown-item" href="#">Necklace</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./arrival.html">New arrival</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Collection
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./ranisa.html">Rani Sa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gift.html">Gift a diamond</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="loadingImgBox" id="loadingImgBox">
         <div class="loadingImg">
             <img src="img/other/wheel-animation.gif">
@@ -160,9 +256,14 @@
                         data-bs-slide-to="1" aria-label="Slide 2">
                     <img src="img/select-dimond.png" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3">
+                    <img src="img/select-dimond.png" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4">
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <img src="img/hero-01.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
                         <img src="img/hero-01.jpg" class="d-block w-100">
                     </div>
                     <div class="carousel-item">
@@ -177,7 +278,7 @@
     </div>
 
 
-    <div class="container categoriesBox pb-5">
+    <div class="container categoriesBox pb-5 pt-5">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="perBoxCatg perbox1">
@@ -239,7 +340,7 @@
         </div>
     </div>
 
-    <div class="iframeCont pb-4">
+    <div class="iframeCont pb-5 pt-5 mt-5">
         <iframe
             src="https://www.youtube.com/embed/ENQmpVZswys?autoplay=0&controls=0&disablekb=1&playsinline=1&cc_load_policy=0&widget_referrer=https%3A%2F%2Fwww.chiragjewellers.com%2Fonlinestore%2F&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1&customControls=true&noCookie=false&enablejsapi=1&origin=https%3A%2F%2Fwww.chiragjewellers.com&widgetid=1"
             frameborder="0" width="100%" height="580" autoplay></iframe>
@@ -247,7 +348,7 @@
 
 
     <!-- productSlider -->
-    <section class="producySlider mt-5 mb-5">
+    <section class="producySlider mt-5 mb-4 pb-4">
         <div class="sliderHead text-center py-4 mb-5">
             <h2 class="allHeading">
                 <span class="sliderAlFnt">Trending</span>
@@ -366,18 +467,18 @@
                             Certification
                         </div>
                         <div class="certImg">
-                            <div class="footerCertImg">
+                           <div class="footerCertImg">
                                 <div class="footerCertperImg ftrImg1">
-                                    <img src="img/sponser-1.png">
+                                    <img src="img/sponser-1.png" class="img-fluid">
                                 </div>
                                 <div class="footerCertperImg">
-                                    <img src="img/sponser-2.png" style="position: relative; left: 5px;">
+                                    <img src="img/sponser-2.png" style="position: relative; left: 5px;" class="img-fluid">
                                 </div>
                                 <div class="footerCertperImg">
-                                    <img src="img/sponser-3.png">
+                                    <img src="img/sponser-3.png" class="img-fluid">
                                 </div>
                                 <div class="footerCertperImg">
-                                    <img src="img/sponser-4.png">
+                                    <img src="img/sponser-4.png" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -429,30 +530,43 @@
         })
     </script>
     <script>
-        let imgSrcArr = ['img/fav.png', 'img/cart.png', 'img/search.png', 'img/profile.png'];
-        let imgSrcArr2 = ['img/hdi2.png', 'img/hdi3.png', 'img/hdi4.png', 'img/hdi1.png'];
-        let signUp_signIn = document.querySelector('.signUp_signIn');
+        // let imgSrcArr = ['img/fav.png', 'img/cart.png', 'img/search.png', 'img/profile.png'];
+        // let imgSrcArr2 = ['img/hdi2.png', 'img/hdi3.png', 'img/hdi4.png', 'img/hdi1.png'];
+        // let signUp_signIn = document.querySelector('.signUp_signIn');
+        // window.addEventListener('scroll', () => {
+        //     let wholeHeader = document.querySelector('.wholeHeader');
+        //     let headerImgJs = document.getElementById('headerImgJs');
+        //     let headerImg2Js = document.getElementById('headerImg2Js');
+        //     let position = window.scrollY > 0;
+        //     wholeHeader.classList.toggle('custHeadClass', position);
+        //     signUp_signIn.classList.toggle('sign_up_in_cust', position)
+        //     !position ? headerImgJs.style.display = 'block' : headerImgJs.style.display = 'none';
+        //     position ? headerImg2Js.style.display = 'block' : headerImg2Js.style.display = 'none';
+        //     let images = document.querySelectorAll('.perHdImg');
+        //     if (position) {
+        //         images.forEach((e, i) => {
+        //             e.src = imgSrcArr[i];
+        //         })
+        //     }
+        //     if (!position) {
+        //         images.forEach((e, i) => {
+        //             e.src = imgSrcArr2[i];
+        //         })
+        //     }
+        // })
+
+
         window.addEventListener('scroll', () => {
             let wholeHeader = document.querySelector('.wholeHeader');
             let headerImgJs = document.getElementById('headerImgJs');
             let headerImg2Js = document.getElementById('headerImg2Js');
             let position = window.scrollY > 0;
             wholeHeader.classList.toggle('custHeadClass', position);
-            signUp_signIn.classList.toggle('sign_up_in_cust', position)
+
             !position ? headerImgJs.style.display = 'block' : headerImgJs.style.display = 'none';
             position ? headerImg2Js.style.display = 'block' : headerImg2Js.style.display = 'none';
-            let images = document.querySelectorAll('.perHdImg');
-            if (position) {
-                images.forEach((e, i) => {
-                    e.src = imgSrcArr[i];
-                })
-            }
-            if (!position) {
-                images.forEach((e, i) => {
-                    e.src = imgSrcArr2[i];
-                })
-            }
-        })
+
+        });
     </script>
 </body>
 
