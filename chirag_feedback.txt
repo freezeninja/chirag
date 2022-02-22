@@ -1,0 +1,231 @@
+1. home page :
+    faded txt :
+             <h2 class="allHeading txtFadedAll">
+                <span class="sliderAlFnt">Trending</span>
+                Collection
+              </h2>
+            //use txtFadedAll class wherever you want to make it faded//
+    chirag logo : 
+            removed :
+                .wholeHeader.custHeadClass .upperHdCont{
+                  padding: .5rem 0;
+                }
+            added: 
+                .wholeHeader .upperHdCont{
+                  padding: .5rem 0;
+                  position: relative;
+                  top: .35rem;
+                }
+                .wholeHeader.custHeadClass .upperHdCont{
+                    position: static;
+                }
+    Category underline:
+            changed css:
+                .navbar-nav .nav-link{
+                    color: var(--white-color);
+                    font-size: 18px;
+                    border: 2px solid transparent;
+                    padding: 0.1rem 0;
+                    margin: 0.4rem .85rem;
+                }
+                .nav-item:hover .nav-link{
+                    color: var(--light-txt);
+                    border-bottom: 2px solid var(--light-txt);
+                }
+                .nav-item:hover > .dropdown-menu{
+                    position: absolute;
+                    inset: 0px auto auto 0px;
+                    left: -.6rem;
+                    margin: 0px;
+                    transform: translate3d(0px, 45px, 0px);
+                    display: block;
+                    top: 2px;
+                    border: none;
+                    border-radius:0;
+                    min-width: 11.5rem;
+                    background-color:#ececec;
+                }
+
+    wishlist Cart number :
+        .perIcon{
+            cursor: pointer;
+            position: relative;
+        }
+        .perIcon a{
+            text-decoration: none;
+        }
+        .headerIcon{
+    display: flex;
+    column-gap: 5px;
+    justify-content: flex-end;
+    position: relative;
+    top: .45rem;
+}
+.Wish_cart_number{
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    min-width: 22px;
+    min-height: 22px;
+    font-size: 14px;
+    text-align: center;
+    top: -1.1rem;
+    left: 0.7rem;
+    color: white;
+}
+
+
+ 2. cart :   
+       changed css :
+           .cartProdImg img{
+               max-width: 100px;
+               margin: 5px;
+               height: 112px;
+           }
+           .productTableCart{
+               min-width: 310px;
+           }
+           .QPT{
+               min-width: 188px;
+           }
+
+
+3. search Page :
+        changed html :
+            <div class="search_cross text-end mb-3" id="search_cross">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </div>
+
+        changed css:
+            .search_cross i{
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+                position: relative;
+                right: 1.8rem;
+            }
+
+4. Product details: 
+        changed html:
+            <div class="smlTxtprodDet txtFadedAll mb-3">
+                The price mentioned is exclusive of 3% goods and services tax. <br>
+                Description : Diamond Colour – EF | Diamond Clarity – VVS
+            </div>
+            <p class="txtFadedAll pt-2">
+                Rs. 204,000.00
+            </p>
+        
+        // just flip the text //
+
+5. Ring : 
+        2 Liner Already available in ring page, just providing for reference:
+        <div class="ring-upper-txt text-center mt-5">
+           <p class="sliderAlFnt">Ring</p>
+           <div class="container">
+               <p class="fadeTxtColorAll pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a
+                   suscipit aperiam vel esse facilis ullam consectetur! Distinctio, unde nesciunt? Lorem ipsum dolor sit
+                   amet consectetur adipisicing elit. Vitae praesentium nam nobis?</p>
+           </div>
+        </div>
+
+        product name icon alighnment:
+            .ringWCIcon{
+                margin: auto 0;
+            }
+
+
+6. gift a diamond :
+        Previous:
+            <a href="./compare.html">
+                View
+            </a>
+        
+        current :
+            <a href="./product.html">
+                View
+            </a>
+
+7. Diamond journey :
+    changed html:
+    Class 'D_journey_small' added on second p of diamondSmallConatainer
+    changed css:
+        .diamondLarge-Imf-txt1,.diamondLarge-Imf-txt2 {
+            font-size: 15px;
+            text-align: end;
+            color: white;
+            position: absolute;
+            right: 8%;
+            bottom: 16%;
+        }
+        .diamondLarge-Imf-txt1{
+            max-width: 369px;
+        }
+        .diamondLarge-Imf-txt2{
+            max-width: 342px;
+        }
+        .D_journey_small{
+            font-size: 15px;
+        }
+
+
+8. new arrival :
+ changed html :
+   //commenting the whole slider//
+
+    added :
+      <section class="arrival_down_category mt-5 mb-5 pt-3 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="#">
+                        <div class="prodImg">
+                            <img src="img/nacklace.png" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="#">
+                        <div class="prodImg">
+                            <img src="img/earrings.png" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <a href="#">
+                        <div class="prodImg">
+                            <img src="img/Bracelet.png" class="img-fluid">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+9. contact us :
+    changed html :
+     <div class="DownPaymentContactUs mb-5">
+            <p class="m-0 ConatctPara text-center">
+                <span class="ConatctYSpan">Address: </span>
+                <span class="txtFadedAll">Aspiration vintage, 12, pretoria street, kolkata 71</span>
+            </p>
+            <p class="m-0 ConatctPara text-center">
+                <span class="ConatctYSpan">Phone Number: </span>
+                <span class="txtFadedAll">(033) 4004 7476</span>
+                <span class="ConatctYSpan">| Mobile Number: </span>
+                <span class="txtFadedAll">+91 9830747476</span>
+            </p>
+            <p class="m-0 ConatctPara text-center">
+                <span class="ConatctYSpan">Email Id: </span>
+                <span class="txtFadedAll">chiragjewellers@gmail.com</span>
+            </p>
+        </div>
+
+
+10. black color in whole web :
+    css changed :
+        .wishProdCross{
+            padding: 7px 11px;
+            border: 1px solid var(--light-txt);
+            color: var(--light-txt);
+        }

@@ -47,14 +47,16 @@
                 </div>
                 <div class="headerIconUpper">
                     <div class="headerIcon">
-                        <div class="perIcon">
+                         <div class="perIcon">
                             <a href="./wishlist.html">
                                 <img src="img/fav.png" class="perHdImg">
+                                <span class="Wish_cart_number">13</span>
                             </a>
                         </div>
                         <div class="perIcon">
                             <a href="./cart.html">
                                 <img src="img/cart.png" class="perHdImg">
+                                <span class="Wish_cart_number">5</span>
                             </a>
                         </div>
                         <div class="perIcon searchBoxAll">
@@ -76,11 +78,13 @@
                     <div class="perIcon">
                         <a href="./wishlist.html">
                             <img src="img/fav.png">
+                            <span class="Wish_cart_number">13</span>
                         </a>
                     </div>
                     <div class="perIcon">
                         <a href="./cart.html">
                             <img src="img/cart.png">
+                            <span class="Wish_cart_number">5</span>
                         </a>
                     </div>
                     <div class="perIcon searchBoxAll" id="searchBoxAll">
@@ -136,8 +140,8 @@
 
     <div class="serachCliked_box">
         <div class="serachInput_content">
-            <div class="search_cross text-center mb-4" id="search_cross">
-                <i class="fas fa-times"></i>
+           <div class="search_cross text-end mb-3" id="search_cross">
+                <i class="fas fa-times" aria-hidden="true"></i>
             </div>
             <div class="relativeSearch">
                 <input type="text">
@@ -168,12 +172,27 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 prodDetleftBox">
                     <div class="headerIconProd d-flex mt-3">
-                        <div class="perIcon">
-                            <a href="./wishlist.html">
-                                <img src="img/fav.png" class="perHdImg">
-                            </a>
+                        <div class="perIcon d-flex">
+                            <div class="Toggle_per_img" onclick="TogglwImgBox()">
+                                <a href="javascript:void(0);">
+                                    <img src="img/other/share-icon.png" class="perHdImg">
+                                </a>
+                            </div>
+                            <div class="hideen_img_box_upper">
+                                <div class="hideen_img_box">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/facebook.png" class="perHdImg">
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <img src="img/instagram.png" class="perHdImg">
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                        <img src="img/twiter.png" class="perHdImg">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="perIcon">
+                        <!-- <div class="perIcon">
                             <a href="./cart.html">
                                 <img src="img/cart.png" class="perHdImg">
                             </a>
@@ -182,14 +201,17 @@
                             <a href="./cart.html">
                                 <img src="img/other/share-icon.png" class="perHdImg">
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     <p class="prodDetLargetxt txtFadedAll mb-0 pt-4 mt-3">
                         Diamond ring (R-445)
                     </p>
-                    <div class="smlTxtprodDet txtFadedAll mb-3">Rs. 204,000.00</div>
-                    <p class="txtFadedAll pt-2">The price mentioned is exclusive of 3% goods and services tax. <br>
+                    <div class="smlTxtprodDet txtFadedAll mb-3">
+                        The price mentioned is exclusive of 3% goods and services tax. <br>
                         Description : Diamond Colour – EF | Diamond Clarity – VVS
+                    </div>
+                    <p class="txtFadedAll pt-2">
+                        Rs. 204,000.00
                     </p>
                     <div class="prodDetSize mt-4 pt-2 txtFadedAll">
                         <p class="m-0">Size</p>
@@ -209,13 +231,13 @@
                         </div>
                         <div class="prodDetQty mt-2">
                             <div class="qtyTxt">
-                                Qty: 
+                                Qty:
                             </div>
-                            <div class="QtyChange-box prod_det_qtyox">
-                                <span id="ProdDetQtyNum">1</span>
-                                <div class="prodIWhole_div">
-                                    <div class="Prod_detIDiv"><i class="fas fa-sort-up QtyLogoProdDetPlus"></i></div>
-                                    <div class="Prod_detIDiv"><i class="fas fa-sort-down QtyLogoProdDet"></i></div>
+                            <div class="QtyChange-box">
+                                <div id="ProdDetQtyNum">1</div>
+                                <div class="prodIWhole_div d-flex">
+                                    <img class="QtyLogoProdDetPlus" src="img/other/uparrow.png" alt="uparrow">
+                                    <img class="QtyLogoProdDet" src="img/other/downarrow.png" alt="downarrow">
                                 </div>
                             </div>
                         </div>
@@ -351,12 +373,13 @@
                             Certification
                         </div>
                         <div class="certImg">
-                           <div class="footerCertImg">
+                            <div class="footerCertImg">
                                 <div class="footerCertperImg ftrImg1">
                                     <img src="img/sponser-1.png" class="img-fluid">
                                 </div>
                                 <div class="footerCertperImg">
-                                    <img src="img/sponser-2.png" style="position: relative; left: 5px;" class="img-fluid">
+                                    <img src="img/sponser-2.png" style="position: relative; left: 5px;"
+                                        class="img-fluid">
                                 </div>
                                 <div class="footerCertperImg">
                                     <img src="img/sponser-3.png" class="img-fluid">
@@ -393,7 +416,7 @@
             let headerImg2Js = document.getElementById('headerImg2Js');
             let position = window.scrollY > 0;
             wholeHeader.classList.toggle('custHeadClass', position);
-           
+
             !position ? headerImgJs.style.display = 'block' : headerImgJs.style.display = 'none';
             position ? headerImg2Js.style.display = 'block' : headerImg2Js.style.display = 'none';
 
@@ -401,19 +424,19 @@
 
         let ProdImgId = document.getElementById('Product-Imge-Main');
         let imgArr = ['img/ring/product-1.png', 'img/ring/product-2.png', 'img/ring/product-3.png'];
-        function ProdDetailImgChange(id){
-            imgArr.forEach((e,i)=>{
-                if(id == i){
+        function ProdDetailImgChange(id) {
+            imgArr.forEach((e, i) => {
+                if (id == i) {
                     ProdImgId.src = e;
                 }
             });
         }
 
         let ProdSizeBtn = document.querySelectorAll('.ProdSizeBtn');
-        ProdSizeBtn.forEach((elem)=>{
-            elem.addEventListener('click', ()=>{
-                ProdSizeBtn.forEach((elem2)=>{
-                    if(elem != elem2){
+        ProdSizeBtn.forEach((elem) => {
+            elem.addEventListener('click', () => {
+                ProdSizeBtn.forEach((elem2) => {
+                    if (elem != elem2) {
                         elem2.classList.remove('active');
                     }
                 })
@@ -422,25 +445,30 @@
         });
 
         let ProdDetQtyNum = document.getElementById('ProdDetQtyNum'),
-        QtyLogoProdDet= document.querySelector('.QtyLogoProdDet'),
-        QtyLogoProdDetPlus = document.querySelector('.QtyLogoProdDetPlus');
+            QtyLogoProdDet = document.querySelector('.QtyLogoProdDet'),
+            QtyLogoProdDetPlus = document.querySelector('.QtyLogoProdDetPlus');
         let value = parseFloat(ProdDetQtyNum.innerText);
         let count = value;
-        QtyLogoProdDet.addEventListener('click', ()=>{
-            console.log('hii9');
-            
+        QtyLogoProdDet.addEventListener('click', () => {
+            // console.log('hii9');
+
             count--
-            if(count <= 0){
+            if (count <= 0) {
                 count = 0
             }
             ProdDetQtyNum.innerText = count;
         });
-        QtyLogoProdDetPlus.addEventListener('click', ()=>{
-            console.log('hi');
-            
+        QtyLogoProdDetPlus.addEventListener('click', () => {
+            // console.log('hi');
+
             count++
             ProdDetQtyNum.innerText = count
         })
+
+        let hideen_img_box_upper = document.querySelector('.hideen_img_box_upper');
+        function TogglwImgBox() {
+            hideen_img_box_upper.classList.toggle('active');
+        };
     </script>
 
     <script>
