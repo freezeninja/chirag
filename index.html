@@ -97,24 +97,24 @@
                 </div>
             </div>
             <div class="doenHdCont">
-                <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
+                 <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ring.html|bracelet.html|nacklace.html|earring.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Earrings</a></li>
                             <li><a class="dropdown-item" href="./ring.html">Ring</a></li>
-                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                           <li><a class="dropdown-item" href="./bracelet.html">Bracelets</a></li>
                             <li><a class="dropdown-item" href="#">Necklace</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./arrival.html">New arrival</a>
+                        <a class="nav-link active" data-endpoint="new-arrival.html" aria-current="page" href="./new-arrival.html">New arrival</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ranisa.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Collection
                         </a>
@@ -123,7 +123,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./gift.html">Gift a diamond</a>
+                        <a class="nav-link"  data-endpoint="gift.html"  href="./gift.html">Gift a diamond</a>
                     </li>
                 </ul>
             </div>
@@ -165,7 +165,14 @@
                             <img src="img/profile.png" class="perHdImg">
                             <span class="signUp_signIn signupNotHome">
                                 <a href="./signup.html"> Sign up</a>/<a href="./signin.html">Sign in</a>
+                                <span class="dropdown_icon"><i class="fas fa-chevron-down"></i></span>
                             </span>
+
+                            <div class="logOut txtFadedAll">
+                                <div class="pt-2 mb-2"> <a href="#"><i class="fas fa-user"></i> Logout</a></div>
+                                <div class="mb-2"> <a href="#"><i class="fas fa-user"></i> Login</a></div>
+                                <div class="mb-2"> <a href="#"><i class="fas fa-user"></i> Logout</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,28 +201,33 @@
                         <span class="signUp_signIn signupHome">
                             <a href="./signup.html"> Sign up</a>/<a href="./signin.html">Sign in</a>
                         </span>
+                        <div class="logOut txtFadedAll">
+                            <div class="pt-2 mb-2"> <a href="#"><i class="fas fa-user"></i> Logout</a></div>
+                            <div class="mb-2"> <a href="#"><i class="fas fa-user"></i> Login</a></div>
+                            <div class="mb-2"> <a href="#"><i class="fas fa-user"></i> Logout</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="doenHdCont notHomeDoen">
-                <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
+                 <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ring.html|bracelet.html|nacklace.html|earring.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Earrings</a></li>
                             <li><a class="dropdown-item" href="./ring.html">Ring</a></li>
-                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                           <li><a class="dropdown-item" href="./bracelet.html">Bracelets</a></li>
                             <li><a class="dropdown-item" href="#">Necklace</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./arrival.html">New arrival</a>
+                        <a class="nav-link active" data-endpoint="new-arrival.html" aria-current="page" href="./new-arrival.html">New arrival</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ranisa.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Collection
                         </a>
@@ -224,7 +236,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./gift.html">Gift a diamond</a>
+                        <a class="nav-link"  data-endpoint="gift.html"  href="./gift.html">Gift a diamond</a>
                     </li>
                 </ul>
             </div>
@@ -289,22 +301,28 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="perBoxCatg perbox1">
                     <div class="cateImg">
-                        <img src="img/earrings.png" class="img-fluid">
-                        <p class="discoverBtn">
-                            <a href="#">
-                                Discover
-                            </a>
-                        </p>
+                        <img src="img/earrings.jpg" class="img-fluid">
+                        <div class="home_categoty_box">
+                            <span class="home_banner_large_text">Earrings</span>
+                            <p class="discoverBtn text-center">
+                                <a href="#">
+                                    Discover
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="perBoxCatg">
                     <div class="cateImg">
-                        <img src="img/ring.png" class="img-fluid">
-                        <p class="discoverBtn">
-                            <a href="#">
-                                Discover
-                            </a>
-                        </p>
+                        <img src="img/ring.jpg" class="img-fluid">
+                        <div class="home_categoty_box">
+                            <span class="home_banner_large_text">Rings</span>
+                            <p class="discoverBtn text-center">
+                                <a href="#">
+                                    Discover
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="perBoxCatg">
@@ -324,22 +342,28 @@
                 </div>
                 <div class="perBoxcatg">
                     <div class="cateImg">
-                        <img src="img/Bracelet.png" class="img-fluid">
-                        <p class="discoverBtn">
-                            <a href="#">
-                                Discover
-                            </a>
-                        </p>
+                        <img src="img/Bracelet.jpg" class="img-fluid">
+                        <div class="home_categoty_box">
+                            <span class="home_banner_large_text">Bracelets</span>
+                            <p class="discoverBtn text-center">
+                                <a href="#">
+                                    Discover
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="perBoxcatg">
                     <div class="cateImg">
-                        <img src="img/nacklace.png" class="img-fluid">
-                        <p class="discoverBtn">
-                            <a href="#">
-                                Discover
-                            </a>
-                        </p>
+                        <img src="img/nacklace.jpg" class="img-fluid">
+                        <div class="home_categoty_box">
+                            <span class="home_banner_large_text">Necklace</span>
+                            <p class="discoverBtn text-center">
+                                <a href="#">
+                                    Discover
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

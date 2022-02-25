@@ -97,24 +97,24 @@
                 </div>
             </div>
             <div class="doenHdCont notHomeDoen">
-                <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
+                 <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ring.html|bracelet.html|nacklace.html|earring.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Earrings</a></li>
                             <li><a class="dropdown-item" href="./ring.html">Ring</a></li>
-                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                           <li><a class="dropdown-item" href="./bracelet.html">Bracelets</a></li>
                             <li><a class="dropdown-item" href="#">Necklace</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./arrival.html">New arrival</a>
+                        <a class="nav-link active" data-endpoint="new-arrival.html" aria-current="page" href="./new-arrival.html">New arrival</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ranisa.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Collection
                         </a>
@@ -123,7 +123,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./gift.html">Gift a diamond</a>
+                        <a class="nav-link"  data-endpoint="gift.html"  href="./gift.html">Gift a diamond</a>
                     </li>
                 </ul>
             </div>
@@ -158,7 +158,7 @@
             <span class="sliderAlFnt">Arrivals</span>
         </h2>
         <div class="container">
-            <p class="fadeTxtColorAll pt-2">Underprinned by our heritage, our curated collection of ethically sourced natural diamond rings have their own story to tell. Whether given with intent – from promise rings to eternity rings – or expression of individual spirit,</p>
+            <p class="fadeTxtColorAll pt-3">Underprinned by our heritage, our curated collection of ethically sourced natural diamond rings have their own story to tell. Whether given with intent – from promise rings to eternity rings – or expression of individual spirit,</p>
         </div>
     </div>
 
@@ -179,6 +179,12 @@
             </div>
         </div>
     </div>
+
+    <!-- <select name="s" id="s">
+        <option value="hh" selected>dshj</option>
+        <option value="gh">dshjjhkgjgjhg</option>
+        <option value="gy">dshj</option>
+    </select> -->
 
     <section class="ring-product mt-3 mb-5 pb-5">
         <div class="container">
@@ -352,21 +358,21 @@
                     <div class="item">
                         <a href="#">
                             <div class="prodImg">
-                                <img src="img/nacklace.png" alt="">
+                                <img src="img/nacklace.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="item">
                         <a href="#">
                             <div class="prodImg">
-                                <img src="img/earrings.png" alt="">
+                                <img src="img/earrings.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="item">
                         <a href="#">
                             <div class="prodImg">
-                                <img src="img/Bracelet.png" alt="">
+                                <img src="img/Bracelet.jpg" alt="">
                             </div>
                         </a>
                     </div>
@@ -379,26 +385,32 @@
 
 
     <section class="arrival_down_category mt-5 mb-5 pt-3 pb-5">
+        <div class="sliderHead text-center mb-5 mt-5">
+            <h2 class="allHeading txtFadedAll">
+                Explore
+                <span class="sliderAlFnt">Categories</span>
+            </h2>
+        </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
                     <a href="#">
                         <div class="prodImg">
-                            <img src="img/nacklace.png" class="img-fluid">
+                            <img src="img/nacklace.jpg" class="img-fluid">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
                     <a href="#">
                         <div class="prodImg">
-                            <img src="img/earrings.png" class="img-fluid">
+                            <img src="img/earrings.jpg" class="img-fluid">
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-2">
                     <a href="#">
                         <div class="prodImg">
-                            <img src="img/Bracelet.png" class="img-fluid">
+                            <img src="img/Bracelet.jpg" class="img-fluid">
                         </div>
                     </a>
                 </div>

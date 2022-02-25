@@ -100,24 +100,24 @@
                 </div>
             </div>
             <div class="doenHdCont notHomeDoen">
-                <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
+                 <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ring.html|bracelet.html|nacklace.html|earring.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Earrings</a></li>
                             <li><a class="dropdown-item" href="./ring.html">Ring</a></li>
-                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                           <li><a class="dropdown-item" href="./bracelet.html">Bracelets</a></li>
                             <li><a class="dropdown-item" href="#">Necklace</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./arrival.html">New arrival</a>
+                        <a class="nav-link active" data-endpoint="new-arrival.html" aria-current="page" href="./new-arrival.html">New arrival</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ranisa.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Collection
                         </a>
@@ -126,7 +126,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./gift.html">Gift a diamond</a>
+                        <a class="nav-link"  data-endpoint="gift.html"  href="./gift.html">Gift a diamond</a>
                     </li>
                 </ul>
             </div>
@@ -158,9 +158,9 @@
     </div>
 
     <div class="ring-upper-txt text-center mt-5">
-        <p class="sliderAlFnt">Ring</p>
+        <h2 class="sliderAlFnt">Ring</h2>
         <div class="container">
-            <p class="fadeTxtColorAll pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a
+            <p class="fadeTxtColorAll pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium a
                 suscipit aperiam vel esse facilis ullam consectetur! Distinctio, unde nesciunt? Lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Vitae praesentium nam nobis?</p>
         </div>
@@ -169,7 +169,6 @@
     <!-- <div class="ring-banner">
         <img src="img/ring/slide.png" class="img-fluid">
     </div> -->
-
 
     <div class="sortingAll mt-5">
         <div class="container">
@@ -212,13 +211,15 @@
                     </div> -->
                 </div>
                 <div class="left-Sorting">
-                    <div class="perSortingBox">
-                        <span class="slectSrtDown"><i class="fas fa-sort-down"></i></span>
-                        <select name="sortby" id="sortby" style="min-width: 70px;">
-                            <option value="sortby" selected>Sort by</option>
-                            <option value="M1">M1</option>
-                        </select>
-                    </div>
+                   <span class="sort_by">Sort By <i class="fas fa-sort-down"></i></span>
+                   <div class="sorting_list">
+                       <div class="srting_per_item">
+                           <a href="#">Price high to low</a>
+                       </div>
+                       <div class="srting_per_item">
+                           <a href="#">Price low to high</a>
+                       </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -680,21 +681,21 @@
                     <div class="item">
                         <a href="#">
                             <div class="prodImg">
-                                <img src="img/nacklace.png" alt="">
+                                <img src="img/nacklace.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="item">
                         <a href="#">
                             <div class="prodImg">
-                                <img src="img/earrings.png" alt="">
+                                <img src="img/earrings.jpg" alt="">
                             </div>
                         </a>
                     </div>
                     <div class="item">
                         <a href="#">
                             <div class="prodImg">
-                                <img src="img/Bracelet.png" alt="">
+                                <img src="img/Bracelet.jpg" alt="">
                             </div>
                         </a>
                     </div>
@@ -820,6 +821,10 @@
            
             !position ? headerImgJs.style.display = 'block' : headerImgJs.style.display = 'none';
             position ? headerImg2Js.style.display = 'block' : headerImg2Js.style.display = 'none';
+
+            // if(!position){
+            //     headerImgJs.style.display = 'block'
+            // }
 
         });
     </script>

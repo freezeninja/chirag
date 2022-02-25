@@ -44,7 +44,7 @@
                             </a>
                         </div>
                         <div class="perIcon">
-                            <a href="./cart.html">
+                            <a href="cart.html">
                                 <img src="img/cart.png" class="perHdImg">
                                 <span class="Wish_cart_number">5</span>
                             </a>
@@ -91,22 +91,22 @@
             <div class="doenHdCont notHomeDoen">
                 <ul class="navbar-nav customNavCss me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ring.html|bracelet.html|nacklace.html|earring.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Earrings</a></li>
                             <li><a class="dropdown-item" href="./ring.html">Ring</a></li>
-                            <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                           <li><a class="dropdown-item" href="./bracelet.html">Bracelets</a></li>
                             <li><a class="dropdown-item" href="#">Necklace</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./arrival.html">New arrival</a>
+                        <a class="nav-link active" data-endpoint="new-arrival.html" aria-current="page" href="./new-arrival.html">New arrival</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" data-endpoint="ranisa.html" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Collection
                         </a>
@@ -115,7 +115,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./gift.html">Gift a diamond</a>
+                        <a class="nav-link"  data-endpoint="gift.html"  href="./gift.html">Gift a diamond</a>
                     </li>
                 </ul>
             </div>
@@ -188,29 +188,41 @@
                         Cut
                     </div>
                     <div class="gift_cut_content">
-                        <div class="gift_cut_upprt">
-                            <div class="d-flex cut_images">
-                                <div class="per_cut_img">
-                                    <img src="img/other/a1.png">
+                        <div class="gift_cut_upprt row g-3">
+                            <!-- <div class="d-flex cut_images"> -->
+                                <div class="col-4">
+                                    <div class="per_cut_img text-center">
+                                        <img src="img/other/a1.png">
+                                    </div>
                                 </div>
-                                <div class="per_cut_img">
-                                    <img src="img/other/diamond2.png">
+                                <div class="col-4">
+                                    <div class="per_cut_img text-center">
+                                        <img src="img/other/diamond2.png">
+                                    </div>
                                 </div>
-                                <div class="per_cut_img">
-                                    <img src="img/other/diamond-5.png">
+                                <div class="col-4">
+                                    <div class="per_cut_img text-center">
+                                        <img src="img/other/diamond-5.png">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex cut_images mt-3">
-                                <div class="per_cut_img">
-                                    <img src="img/other/diamond3.png">
+                            <!-- </div> -->
+                            <!-- <div class="d-flex cut_images mt-3"> -->
+                                <div class="col-4">
+                                    <div class="per_cut_img text-center">
+                                        <img src="img/other/diamond3.png">
+                                    </div>
                                 </div>
-                                <div class="per_cut_img">
-                                    <img src="img/other/diamond4.png">
+                                <div class="col-4">
+                                    <div class="per_cut_img text-center">
+                                        <img src="img/other/diamond4.png">
+                                    </div>
                                 </div>
-                                <div class="per_cut_img">
-                                    <img src="img/other/diamond-6.png">
+                                <div class="col-4">
+                                    <div class="per_cut_img text-center">
+                                        <img src="img/other/diamond-6.png">
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -219,37 +231,53 @@
                         Color
                     </div>
                     <div class="giftDownContent">
-                        <div class="giftDownBox">
-                            <div class="gift_down_box_upper d-flex">
-                                <div class="perGift_item gift_color_item">
-                                    <p class="m-0 text-center">D</p>
+                        <div class="giftDownBox row g-3">
+                            <!-- <div class="gift_down_box_upper d-flex"> -->
+                                <div class="col-3">
+                                    <div class="perGift_item gift_color_item">
+                                        <p class="m-0 text-center">D</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_color_item">
-                                    <p class="m-0 text-center">E
-                                    </p>
+                                <div class="col-3">
+                                    <div class="perGift_item gift_color_item">
+                                        <p class="m-0 text-center">E
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_color_item">
-                                    <p class="m-0 text-center">F</p>
+                                <div class="col-3">
+                                    <div class="perGift_item gift_color_item">
+                                        <p class="m-0 text-center">F</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_color_item">
-                                    <p class="m-0 text-center">G</p>
+                                <div class="col-3">
+                                    <div class="perGift_item gift_color_item">
+                                        <p class="m-0 text-center">G</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="gift_down_box_upper mt-3 d-flex">
-                                <div class="perGift_item gift_color_item">
-                                    <p class="m-0 text-center">H</p>
+                            <!-- </div> -->
+                            <!-- <div class="gift_down_box_upper mt-3 d-flex"> -->
+                                <div class="col-3">
+                                    <div class="perGift_item gift_color_item">
+                                        <p class="m-0 text-center">H</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_color_item">
-                                    <p class="m-0 text-center">I
-                                    </p>
+                                <div class="col-3">
+                                    <div class="perGift_item gift_color_item">
+                                        <p class="m-0 text-center">I
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_color_item">
-                                    <p class="m-0 text-center">J</p>
+                                <div class="col-3">
+                                    <div class="perGift_item gift_color_item">
+                                        <p class="m-0 text-center">J</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_color_item">
-                                    <p class="m-0 text-center">K</p>
+                                <div class="col-3">
+                                    <div class="perGift_item gift_color_item">
+                                        <p class="m-0 text-center">K</p>
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -258,6 +286,9 @@
                         Carat
                     </div>
                     <div class="giftInput_boxes">
+                        <div class="gift_input_slider">
+
+                        </div>
                         <div class="Gift_input">
                             <input value="2" min="0" max="20" type="range" onchange="caratChange()"
                                 id="caratFirstInput">
@@ -279,29 +310,41 @@
                         Clarity
                     </div>
                     <div class="giftDownContent">
-                        <div class="giftDownBox">
-                            <div class="gift_down_box_upper d-flex">
-                                <div class="perGift_item gift_clarity_item">
-                                    <p class="m-0 text-center">VVS1</p>
+                        <div class="giftDownBox row g-3">
+                            <!-- <div class="gift_down_box_upper d-flex"> -->
+                                <div class="col-4">
+                                    <div class="perGift_item gift_clarity_item">
+                                        <p class="m-0 text-center">VVS1</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_clarity_item">
-                                    <p class="m-0 text-center">VVS2</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_clarity_item">
+                                        <p class="m-0 text-center">VVS2</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_clarity_item">
-                                    <p class="m-0 text-center">VS1</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_clarity_item">
+                                        <p class="m-0 text-center">VS1</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="gift_down_box_upper mt-3 d-flex">
-                                <div class="perGift_item gift_clarity_item">
-                                    <p class="m-0 text-center">VS1</p>
+                            <!-- </div> -->
+                            <!-- <div class="gift_down_box_upper mt-3 d-flex"> -->
+                                <div class="col-4">
+                                    <div class="perGift_item gift_clarity_item">
+                                        <p class="m-0 text-center">VS1</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_clarity_item">
-                                    <p class="m-0 text-center">SL1</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_clarity_item">
+                                        <p class="m-0 text-center">SL1</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_clarity_item">
-                                    <p class="m-0 text-center">SL2</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_clarity_item">
+                                        <p class="m-0 text-center">SL2</p>
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -310,23 +353,31 @@
                         Polish
                     </div>
                     <div class="giftDownContent">
-                        <div class="giftDownBox">
-                            <div class="gift_down_box_upper d-flex">
-                                <div class="perGift_item gift_plish_item">
-                                    <p class="m-0 text-center">Excellent</p>
+                        <div class="giftDownBox row g-3">
+                            <!-- <div class="gift_down_box_upper d-flex"> -->
+                                <div class="col-6">
+                                    <div class="perGift_item gift_plish_item">
+                                        <p class="m-0 text-center">Excellent</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_plish_item">
-                                    <p class="m-0 text-center">V.Good</p>
+                                <div class="col-6">
+                                    <div class="perGift_item gift_plish_item">
+                                        <p class="m-0 text-center">V.Good</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="gift_down_box_upper d-flex mt-3">
-                                <div class="perGift_item gift_plish_item">
-                                    <p class="m-0 text-center">Good</p>
+                            <!-- </div> -->
+                            <!-- <div class="gift_down_box_upper d-flex mt-3"> -->
+                                <div class="col-6">
+                                    <div class="perGift_item gift_plish_item">
+                                        <p class="m-0 text-center">Good</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_plish_item">
-                                    <p class="m-0 text-center">Fair</p>
+                                <div class="col-6">
+                                    <div class="perGift_item gift_plish_item">
+                                        <p class="m-0 text-center">Fair</p>
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -335,18 +386,24 @@
                         Certification
                     </div>
                     <div class="giftDownContent">
-                        <div class="giftDownBox">
-                            <div class="gift_down_box_upper d-flex">
-                                <div class="perGift_item gift_certifict_item">
-                                    <p class="m-0 text-center">GIA</p>
+                        <div class="giftDownBox row g-3">
+                            <!-- <div class="gift_down_box_upper d-flex"> -->
+                                <div class="col-4">
+                                    <div class="perGift_item gift_certifict_item">
+                                        <p class="m-0 text-center">GIA</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_certifict_item">
-                                    <p class="m-0 text-center">IGI</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_certifict_item">
+                                        <p class="m-0 text-center">IGI</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_certifict_item">
-                                    <p class="m-0 text-center">HRD</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_certifict_item">
+                                        <p class="m-0 text-center">HRD</p>
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -355,18 +412,24 @@
                         Symmetry
                     </div>
                     <div class="giftDownContent">
-                        <div class="giftDownBox">
-                            <div class="gift_down_box_upper d-flex">
-                                <div class="perGift_item gift_symentry_item">
-                                    <p class="m-0 text-center">Excellent</p>
+                        <div class="giftDownBox row g-3">
+                            <!-- <div class="gift_down_box_upper d-flex"> -->
+                                <div class="col-4">
+                                    <div class="perGift_item gift_symentry_item">
+                                        <p class="m-0 text-center">Excellent</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_symentry_item">
-                                    <p class="m-0 text-center">V.Good</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_symentry_item">
+                                        <p class="m-0 text-center">V.Good</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_symentry_item">
-                                    <p class="m-0 text-center">Good</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_symentry_item">
+                                        <p class="m-0 text-center">Good</p>
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -375,18 +438,24 @@
                         Cut
                     </div>
                     <div class="giftDownContent">
-                        <div class="giftDownBox">
-                            <div class="gift_down_box_upper d-flex">
-                                <div class="perGift_item gift_cut2_item">
-                                    <p class="m-0 text-center">H&A</p>
+                        <div class="giftDownBox row g-3">
+                            <!-- <div class="gift_down_box_upper d-flex"> -->
+                                <div class="col-4">
+                                    <div class="perGift_item gift_cut2_item">
+                                        <p class="m-0 text-center">H&A</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_cut2_item">
-                                    <p class="m-0 text-center">Excellent</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_cut2_item">
+                                        <p class="m-0 text-center">Excellent</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_cut2_item">
-                                    <p class="m-0 text-center">V.Good</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_cut2_item">
+                                        <p class="m-0 text-center">V.Good</p>
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -397,18 +466,24 @@
                         Fluorescence
                     </div>
                     <div class="giftDownContent">
-                        <div class="giftDownBox">
-                            <div class="gift_down_box_upper d-flex">
-                                <div class="perGift_item gift_flurence_item">
-                                    <p class="m-0 text-center">None</p>
+                        <div class="giftDownBox row g-3">
+                            <!-- <div class="gift_down_box_upper d-flex"> -->
+                                <div class="col-4">
+                                    <div class="perGift_item gift_flurence_item">
+                                        <p class="m-0 text-center">None</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_flurence_item">
-                                    <p class="m-0 text-center">Faint</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_flurence_item">
+                                        <p class="m-0 text-center">Faint</p>
+                                    </div>
                                 </div>
-                                <div class="perGift_item gift_flurence_item">
-                                    <p class="m-0 text-center">Medium</p>
+                                <div class="col-4">
+                                    <div class="perGift_item gift_flurence_item">
+                                        <p class="m-0 text-center">Medium</p>
+                                    </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -417,6 +492,9 @@
                         Price
                     </div>
                     <div class="giftInput_boxes">
+                        <div class="gift_input_slider">
+
+                        </div>
                         <div class="Gift_input">
                             <input value="5000" min="5000" max="5000000" step="1000" type="range"
                                 onchange="priceChange()" id="priceFirstInput">
@@ -464,7 +542,7 @@
                     <td class="gift_upper_td text-center">FLUOR</td>
                     <td class="gift_upper_td text-center">CERT NO.</td>
                     <td class="gift_upper_td text-center">DETAILS</td>
-                    <td class="gift_upper_td text-center">PRICE</td>
+                    <td class="gift_upper_td gift_PRICE_td text-center">PRICE</td>
                 </tr>
             </table>
             <table>
@@ -483,11 +561,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr lightColrTableGift">
                     <td class="text-center gift_lower_td">
@@ -504,11 +582,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr">
                     <td class="text-center gift_lower_td">
@@ -525,11 +603,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr lightColrTableGift">
                     <td class="text-center gift_lower_td">
@@ -546,11 +624,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr">
                     <td class="text-center gift_lower_td">
@@ -567,11 +645,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr lightColrTableGift">
                     <td class="text-center gift_lower_td">
@@ -588,11 +666,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr">
                     <td class="text-center gift_lower_td">
@@ -609,11 +687,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr lightColrTableGift">
                     <td class="text-center gift_lower_td">
@@ -630,11 +708,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr">
                     <td class="text-center gift_lower_td">
@@ -651,11 +729,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
                 <tr class="giftLower_tr lightColrTableGift">
                     <td class="text-center gift_lower_td">
@@ -672,11 +750,11 @@
                     <td class="text-center gift_lower_td txtFadedAll">Faint</td>
                     <td class="text-center gift_lower_td txtFadedAll">211056M</td>
                     <td class="text-center gift_lower_td txtFadedAll">
-                        <a href="./product.html">
+                        <a href="./compare.html">
                             View
                         </a>
                     </td>
-                    <td class="text-center gift_lower_td txtFadedAll">Rs. 150,000/-</td>
+                    <td class="text-center gift_lower_td gift_PRICE_td txtFadedAll">Rs. 350,00,000/-</td>
                 </tr>
             </table>
         </div>
@@ -853,7 +931,7 @@
                             elem2.classList.remove('active');
                         }
                     });
-                    elem.classList.add('active');
+                    elem.classList.toggle('active');
                 });
             });
         }
@@ -866,6 +944,8 @@
         forEachFunc(gift_cut2_item);
         forEachFunc(gift_flurence_item);
         forEachFunc(per_cut_img);
+
+        
 
     </script>
 </body>
